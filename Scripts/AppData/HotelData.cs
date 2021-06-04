@@ -9,7 +9,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.AppData
     public class HotelData : Singleton<HotelData>
     {
 
-        public BSTrees<AccommodationPlace, string> HotelsData   { get; set; }
+        public HotelTrees HotelsData   { get; set; }
 
         public HotelData()
         {

@@ -12,7 +12,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces
 
         bool SaveNewAccomodationPlace(AccommodationPlace addedAccommodationPlace);
 
-        bool DeleteAccommodationPlace(AccommodationPlace deletedAccommodationPlace);
+        bool DeleteAccommodationPlace(string deletedAccommodationPlaceName);
 
         bool UpdateAccommodationPlace(AccommodationPlace updatedAccommodationPlace);
 

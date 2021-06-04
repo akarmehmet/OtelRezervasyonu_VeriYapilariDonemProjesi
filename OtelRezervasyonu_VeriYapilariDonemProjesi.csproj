@@ -62,6 +62,8 @@
     <Compile Include="Scripts\ConcreteClass\HotelRoom.cs" />
     <Compile Include="Scripts\ConcreteClass\HotelTrees.cs" />
     <Compile Include="Scripts\ConcreteClass\Motel.cs" />
+    <Compile Include="Scripts\DatabaseOperations\AdminHotelPersonelCrupOperations.cs" />
+    <Compile Include="Scripts\DatabaseOperations\CustomerHotelCrupOperations.cs" />
     <Compile Include="Scripts\Enums\Enum.cs" />
     <Compile Include="Scripts\Heap\HeapNode.cs" />
     <Compile Include="Scripts\Heap\HeapSort.cs" />
@@ -69,6 +71,7 @@
     <Compile Include="Scripts\Interfaces\IDbAdminAccomodationPlaceCrudOperations.cs" />
     <Compile Include="Scripts\Interfaces\IDbAdminPersonelCrudOperations.cs" />
     <Compile Include="Scripts\Interfaces\IDbCustomerAccomodationPlaceCrudOperations.cs" />
+    <Compile Include="Scripts\Interfaces\ISearcAccommodationPlaceByProvinceAndDistrict.cs" />
     <Compile Include="Scripts\Models\AccommodationPlace.cs" />
     <Compile Include="Scripts\Models\Address.cs" />
     <Compile Include="Scripts\Models\Comment.cs" />

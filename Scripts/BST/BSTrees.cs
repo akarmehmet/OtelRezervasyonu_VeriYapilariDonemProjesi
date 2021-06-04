@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.BST
 {
@@ -7,15 +7,22 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.BST
     {
 
         private BSTNode<T, K> root;
-        private string nodes;
+        private List<T> nodes;
 
         public BSTrees(BSTNode<T, K> root)
         {
             this.root = root;
+            nodes = new List<T>();
         }
 
         public BSTrees()
         {
+            nodes = new List<T>();
+        }
+
+        protected BSTNode<T, K> GetRoot()
+        {
+            return root;
         }
 
         public int NodeCount()
@@ -52,32 +59,36 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.BST
             return count;
         }
 
-        public string ShowNodes()
+        public List<T> ShowNodes()
         {
             return nodes;
         }
 
         private void Visit(BSTNode<T, K> node)
         {
-            nodes += node.Key.ToString() + " ";
+            nodes.Add(node.Data);
         }
-        public void PreOrder()
+        public List<T> PreOrder()
         {
-            nodes = "";
+            nodes.Clear();
             PreOrderTrees(root);
+            return nodes;
+
         }
         private void PreOrderTrees(BSTNode<T, K> node)
         {
             if (node == null)
-                return;
+                return ;
             Visit(node);
             PreOrderTrees(node.left);
             PreOrderTrees(node.right);
+
         }
-        public void InOrder()
+        public List<T> InOrder()
         {
-            nodes = "";
+            nodes.Clear();
             InOrderTrees(root);
+            return nodes;
         }
         private void InOrderTrees(BSTNode<T, K> node)
         {
@@ -88,10 +99,12 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.BST
             InOrderTrees(node.right);
         }
 
-        public void PostOrder()
+        public List<T> PostOrder()
         {
-            nodes = "";
+            nodes.Clear();
             PostOrderTrees(root);
+
+            return nodes;
         }
 
         private void PostOrderTrees(BSTNode<T, K> node)

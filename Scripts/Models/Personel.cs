@@ -10,6 +10,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models
     public abstract class Personel
     {
         public string Name { get; set; }
+        public string IdentificationNumber { get; set; }
         public Address Address { get; set; }
         public Department Department { get; set; }
         public Position Position { get; set; }

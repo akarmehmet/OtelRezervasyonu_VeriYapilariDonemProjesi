@@ -29,9 +29,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces
 
         bool MakeReservation(string nameOfAccommodationPlace);
 
-        bool GiveScoreAccommodationPlace(string nameOfAccommodationPlace, float score);
 
-        bool MakeCommentAccommodationPlace(string nameOfAccommodationPlace, string comment);
+        bool MakeCommentAndGiveScoreAccommodationPlace(string nameOfAccommodationPlace, Comment comment);
 
 
 

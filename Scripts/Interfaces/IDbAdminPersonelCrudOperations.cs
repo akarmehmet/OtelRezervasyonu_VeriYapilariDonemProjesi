@@ -10,11 +10,10 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces
 {
     public interface IDbAdminPersonelCrudOperations
     {
-        bool AddNewPersonelToDb(Personel addedPersonel);
-        bool DeletePersonelFormDb(string identificationNumber);
-        bool UpdatePersonelInfo(Personel updatedPersonel);
-        List<Personel> GetPersonelOrderByAccommodationPlace();
-        List<Personel> GetPersonelByDepartment(Department department);
+        bool AddNewPersonelToDb(Personel addedPersonel,string AccommodationPlaceName);
+        bool DeletePersonelFormDb(string identificationNumber, string AccommodationPlaceName);
+        bool UpdatePersonelInfo(Personel updatedPersonel, string AccommodationPlaceName);
+        List<Personel> GetPersonelByDepartment(Department department, string AccommodationPlaceName);
 
     }
 }

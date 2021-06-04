@@ -1,4 +1,5 @@
 ﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.AppData;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.BST;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
 using System;
@@ -16,24 +17,47 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
             hotelData = HotelData.Instance;
         }
 
-        public bool DeleteAccommodationPlace(AccommodationPlace deletedAccommodationPlace)
+       
+
+        public bool DeleteAccommodationPlace(string deletedAccommodationPlaceName)
         {
-            throw new NotImplementedException();
+            return hotelData.HotelsData.Delete(deletedAccommodationPlaceName);
         }
 
         public AccommodationPlace FindAccommodationPlace(string name)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return hotelData.HotelsData.Search(name).Data;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+
+           
         }
 
         public bool SaveNewAccomodationPlace(AccommodationPlace addedAccommodationPlace)
         {
-            throw new NotImplementedException();
+            BSTNode<AccommodationPlace, string> bSTNode = new BSTNode<AccommodationPlace, string>(addedAccommodationPlace, addedAccommodationPlace.Name);
+
+            hotelData.HotelsData.AddNode(bSTNode);
+            return true;
         }
 
         public bool UpdateAccommodationPlace(AccommodationPlace updatedAccommodationPlace)
         {
-            throw new NotImplementedException();
+            BSTNode<AccommodationPlace, string> bSTNode = hotelData.HotelsData.Search(updatedAccommodationPlace.Name);
+
+            if (bSTNode != null)
+            {
+                bSTNode.Data = updatedAccommodationPlace;
+                return true;
+            }
+            else
+                return false; // otel not found exception.
         }
     }
 }
