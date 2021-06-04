@@ -63,6 +63,9 @@
     <Compile Include="Scripts\ConcreteClass\HotelTrees.cs" />
     <Compile Include="Scripts\ConcreteClass\Motel.cs" />
     <Compile Include="Scripts\Enums\Enum.cs" />
+    <Compile Include="Scripts\Heap\HeapNode.cs" />
+    <Compile Include="Scripts\Heap\HeapSort.cs" />
+    <Compile Include="Scripts\Heap\HeapTrees.cs" />
     <Compile Include="Scripts\Interfaces\IDbAdminAccomodationPlaceCrudOperations.cs" />
     <Compile Include="Scripts\Interfaces\IDbAdminPersonelCrudOperations.cs" />
     <Compile Include="Scripts\Interfaces\IDbCustomerAccomodationPlaceCrudOperations.cs" />
