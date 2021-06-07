@@ -57,11 +57,12 @@
     <Compile Include="Scripts\AppData\HotelData.cs" />
     <Compile Include="Scripts\BST\BSTNode.cs" />
     <Compile Include="Scripts\BST\BSTrees.cs" />
+    <Compile Include="Scripts\ConcreteClass\PersonelHeap.cs" />
+    <Compile Include="Scripts\ConcreteClass\ReservationHeap.cs" />
     <Compile Include="Scripts\DatabaseOperations\AdminHotelCrudOperations.cs" />
     <Compile Include="Scripts\ConcreteClass\Hotel.cs" />
     <Compile Include="Scripts\ConcreteClass\HotelRoom.cs" />
     <Compile Include="Scripts\ConcreteClass\HotelTrees.cs" />
-    <Compile Include="Scripts\ConcreteClass\Motel.cs" />
     <Compile Include="Scripts\DatabaseOperations\AdminHotelPersonelCrupOperations.cs" />
     <Compile Include="Scripts\DatabaseOperations\CustomerHotelCrupOperations.cs" />
     <Compile Include="Scripts\Enums\Enum.cs" />
