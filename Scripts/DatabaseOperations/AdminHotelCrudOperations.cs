@@ -26,6 +26,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
             int z;
             int t;
             int a;
+            int d;
         }
 
         public bool DeleteAccommodationPlace(string deletedAccommodationPlaceName)

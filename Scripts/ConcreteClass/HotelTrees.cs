@@ -1,15 +1,12 @@
 ﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.BST;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
 {
-    public class HotelTrees : BSTrees<AccommodationPlace, string>, ISearcAccommodationPlaceByProvinceAndDistrict
+    public class HotelTrees  : BSTrees<AccommodationPlace, string>, ISearcAccommodationPlaceByProvinceAndDistrict
     {
         enum SortOrder{
             Star,
