@@ -16,7 +16,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
         {
             hotelData = HotelData.Instance;
         }
-
+         
        
 
         public bool DeleteAccommodationPlace(string deletedAccommodationPlaceName)
