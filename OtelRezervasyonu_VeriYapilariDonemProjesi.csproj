@@ -58,6 +58,7 @@
     <Compile Include="Scripts\BST\BSTNode.cs" />
     <Compile Include="Scripts\BST\BSTrees.cs" />
     <Compile Include="Scripts\ConcreteClass\PersonelHeap.cs" />
+    <Compile Include="Scripts\ConcreteClass\ReservationHashTable.cs" />
     <Compile Include="Scripts\ConcreteClass\ReservationHeap.cs" />
     <Compile Include="Scripts\DatabaseOperations\AdminHotelCrudOperations.cs" />
     <Compile Include="Scripts\ConcreteClass\Hotel.cs" />
@@ -66,6 +67,8 @@
     <Compile Include="Scripts\DatabaseOperations\AdminHotelPersonelCrupOperations.cs" />
     <Compile Include="Scripts\DatabaseOperations\CustomerHotelCrupOperations.cs" />
     <Compile Include="Scripts\Enums\Enum.cs" />
+    <Compile Include="Scripts\HashTable\HashLinearNode.cs" />
+    <Compile Include="Scripts\HashTable\HashLinearTable.cs" />
     <Compile Include="Scripts\Heap\HeapNode.cs" />
     <Compile Include="Scripts\Heap\HeapSort.cs" />
     <Compile Include="Scripts\Heap\HeapTrees.cs" />
