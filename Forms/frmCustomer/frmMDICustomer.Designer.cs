@@ -1,7 +1,7 @@
 ﻿
-namespace OtelRezervasyonu_VeriYapilariDonemProjesi
+namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 {
-    partial class Form1
+    partial class frmMDICustomer
     {
         /// <summary>
         /// Required designer variable.
@@ -32,10 +32,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Text = "frmMDICustomer";
         }
 
         #endregion
     }
 }
-
