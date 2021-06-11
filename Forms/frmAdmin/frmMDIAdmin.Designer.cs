@@ -153,6 +153,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.updateDeleteToolStripMenuItem.Name = "updateDeleteToolStripMenuItem";
             this.updateDeleteToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
             this.updateDeleteToolStripMenuItem.Text = "Update - Delete";
+            this.updateDeleteToolStripMenuItem.Click += new System.EventHandler(this.updateDeleteToolStripMenuItem_Click);
             // 
             // listByDepertmantToolStripMenuItem
             // 

@@ -82,6 +82,12 @@
     <Compile Include="Forms\frmCustomer\frmPersonnelCreate.Designer.cs">
       <DependentUpon>frmPersonnelCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmCustomer\frmPersonnelUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomer\frmPersonnelUpdateDelete.Designer.cs">
+      <DependentUpon>frmPersonnelUpdateDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCustomer\frmPersonnelCreate.resx">
       <DependentUpon>frmPersonnelCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomer\frmPersonnelUpdateDelete.resx">
+      <DependentUpon>frmPersonnelUpdateDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
