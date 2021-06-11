@@ -43,6 +43,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.hotelLogo = new System.Windows.Forms.PictureBox();
             this.adminTopMDIPanel = new System.Windows.Forms.Panel();
             this.exit = new System.Windows.Forms.PictureBox();
+            this.addRoomToHotelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminLeftMDIPanel.SuspendLayout();
             this.toolStripContainer1.LeftToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -100,7 +101,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.hotelOperationsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.hotelOperationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newHotelCreateToolStripMenuItem,
-            this.hotelInfoUpdateDeleteToolStripMenuItem});
+            this.hotelInfoUpdateDeleteToolStripMenuItem,
+            this.addRoomToHotelToolStripMenuItem});
             this.hotelOperationsToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.hotelOperationsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.hotelOperationsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("hotelOperationsToolStripMenuItem.Image")));
@@ -113,14 +115,14 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // newHotelCreateToolStripMenuItem
             // 
             this.newHotelCreateToolStripMenuItem.Name = "newHotelCreateToolStripMenuItem";
-            this.newHotelCreateToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
+            this.newHotelCreateToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
             this.newHotelCreateToolStripMenuItem.Text = "Create";
             this.newHotelCreateToolStripMenuItem.Click += new System.EventHandler(this.newHotelCreateToolStripMenuItem_Click);
             // 
             // hotelInfoUpdateDeleteToolStripMenuItem
             // 
             this.hotelInfoUpdateDeleteToolStripMenuItem.Name = "hotelInfoUpdateDeleteToolStripMenuItem";
-            this.hotelInfoUpdateDeleteToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
+            this.hotelInfoUpdateDeleteToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
             this.hotelInfoUpdateDeleteToolStripMenuItem.Text = "Update - Delete";
             this.hotelInfoUpdateDeleteToolStripMenuItem.Click += new System.EventHandler(this.hotelInfoUpdateDeleteToolStripMenuItem_Click);
             // 
@@ -190,6 +192,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.exit.TabStop = false;
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
+            // addRoomToHotelToolStripMenuItem
+            // 
+            this.addRoomToHotelToolStripMenuItem.Name = "addRoomToHotelToolStripMenuItem";
+            this.addRoomToHotelToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.addRoomToHotelToolStripMenuItem.Text = "Add Room to Hotel";
+            this.addRoomToHotelToolStripMenuItem.Click += new System.EventHandler(this.addRoomToHotelToolStripMenuItem_Click);
+            // 
             // frmMDIAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,5 +239,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
         private System.Windows.Forms.PictureBox hotelLogo;
         private System.Windows.Forms.Panel adminTopMDIPanel;
         private System.Windows.Forms.PictureBox exit;
+        private System.Windows.Forms.ToolStripMenuItem addRoomToHotelToolStripMenuItem;
     }
 }

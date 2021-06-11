@@ -66,6 +66,20 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.Close();
         }
 
+        private void addRoomToHotelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Count() == 0)
+            {
+                frmAddRoomtoHotel frmAddRoomtoHotel = new frmAddRoomtoHotel();
+                frmAddRoomtoHotel.MdiParent = this;
+                frmAddRoomtoHotel.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
         private void hotelInfoUpdateDeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.MdiChildren.Count() == 0)
