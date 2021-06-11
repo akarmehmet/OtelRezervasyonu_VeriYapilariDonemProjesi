@@ -9,7 +9,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable
     public abstract class HashLinearTable<T>
     {
 
-        int TABLE_SIZE = 5;
+        int TABLE_SIZE = 100;
         HashLinearNode<T>[] table;
 
         public HashLinearTable()

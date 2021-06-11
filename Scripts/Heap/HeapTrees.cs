@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Heap
 {
-    public abstract class HeapTrees<T, K> where K : IComparable
+    public  class HeapTrees<T, K> where K : IComparable
     {
 
         private HeapNode<T,K>[] heapArray;
