@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
 {
     public partial class frmMDIAdmin : Form
@@ -73,6 +74,20 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
                 frmAddRoomtoHotel frmAddRoomtoHotel = new frmAddRoomtoHotel();
                 frmAddRoomtoHotel.MdiParent = this;
                 frmAddRoomtoHotel.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
+        private void createToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Count() == 0)
+            {
+                frmCustomer.frmPersonnelCreate frmPersonnelCreate = new frmCustomer.frmPersonnelCreate();
+                frmPersonnelCreate.MdiParent = this;
+                frmPersonnelCreate.Show();
             }
             else
             {
