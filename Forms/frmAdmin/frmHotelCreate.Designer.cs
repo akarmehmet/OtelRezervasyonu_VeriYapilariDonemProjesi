@@ -196,18 +196,21 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             // createHotelBtn
             // 
+            this.createHotelBtn.BackColor = System.Drawing.SystemColors.HotTrack;
             this.createHotelBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.createHotelBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.createHotelBtn.Location = new System.Drawing.Point(201, 538);
             this.createHotelBtn.Name = "createHotelBtn";
             this.createHotelBtn.Size = new System.Drawing.Size(551, 62);
             this.createHotelBtn.TabIndex = 16;
             this.createHotelBtn.Text = "Create Hotel";
-            this.createHotelBtn.UseVisualStyleBackColor = true;
+            this.createHotelBtn.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(121, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(239, 41);

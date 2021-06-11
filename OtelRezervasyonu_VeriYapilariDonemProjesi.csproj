@@ -52,6 +52,12 @@
     <Compile Include="Forms\frmAdmin\frmHotelCreate.Designer.cs">
       <DependentUpon>frmHotelCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmAdmin\frmHotelUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAdmin\frmHotelUpdateDelete.Designer.cs">
+      <DependentUpon>frmHotelUpdateDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmAdmin\frmMDIAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     <Compile Include="Scripts\Singleton\Singleton.cs" />
     <EmbeddedResource Include="Forms\frmAdmin\frmHotelCreate.resx">
       <DependentUpon>frmHotelCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAdmin\frmHotelUpdateDelete.resx">
+      <DependentUpon>frmHotelUpdateDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAdmin\frmMDIAdmin.resx">
       <DependentUpon>frmMDIAdmin.cs</DependentUpon>

@@ -54,17 +54,32 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
                 this.Top = Cursor.Position.Y - mouseY;
             }
         }
-
-        private void exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void adminTopMDIPanel_MouseUp(object sender, MouseEventArgs e)
         {
             take = false;
             mouseX = 0;
             mouseY = 0;
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void hotelInfoUpdateDeleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Count() == 0)
+            {
+                frmHotelUpdateDelete frmHotelUpdateDelete = new frmHotelUpdateDelete();
+                frmHotelUpdateDelete.MdiParent = this;
+                frmHotelUpdateDelete.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
+
     }
 }
