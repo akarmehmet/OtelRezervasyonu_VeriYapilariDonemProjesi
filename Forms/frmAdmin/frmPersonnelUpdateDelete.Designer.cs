@@ -31,7 +31,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         {
             this.label1 = new System.Windows.Forms.Label();
             this.createHotelBtn = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewHotel = new System.Windows.Forms.ListView();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,11 +53,11 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(51, 15);
+            this.label1.Location = new System.Drawing.Point(179, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(468, 41);
+            this.label1.Size = new System.Drawing.Size(447, 41);
             this.label1.TabIndex = 53;
-            this.label1.Text = "Update / Delete Personnel:";
+            this.label1.Text = "Update / Delete Personel:";
             // 
             // createHotelBtn
             // 
@@ -71,14 +71,14 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.createHotelBtn.Text = "Update / Delete Hotel";
             this.createHotelBtn.UseVisualStyleBackColor = false;
             // 
-            // listView1
+            // listViewHotel
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(49, 70);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(763, 209);
-            this.listView1.TabIndex = 35;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listViewHotel.HideSelection = false;
+            this.listViewHotel.Location = new System.Drawing.Point(49, 70);
+            this.listViewHotel.Name = "listViewHotel";
+            this.listViewHotel.Size = new System.Drawing.Size(763, 209);
+            this.listViewHotel.TabIndex = 35;
+            this.listViewHotel.UseCompatibleStateImageBehavior = false;
             // 
             // label3
             // 
@@ -229,7 +229,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.Controls.Add(this.hotelNameTxtBx);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.createHotelBtn);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listViewHotel);
             this.Location = new System.Drawing.Point(294, 54);
             this.Name = "frmPersonnelUpdateDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -243,7 +243,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button createHotelBtn;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewHotel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label2;

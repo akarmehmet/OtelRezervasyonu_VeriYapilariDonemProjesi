@@ -171,7 +171,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.addPersonelBtn.Name = "addPersonelBtn";
             this.addPersonelBtn.Size = new System.Drawing.Size(567, 62);
             this.addPersonelBtn.TabIndex = 24;
-            this.addPersonelBtn.Text = "Create Personnel";
+            this.addPersonelBtn.Text = "Add Personnel";
             this.addPersonelBtn.UseVisualStyleBackColor = false;
             this.addPersonelBtn.Click += new System.EventHandler(this.addPersonelBtn_Click);
             // 
@@ -180,11 +180,11 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(142, 53);
+            this.label4.Location = new System.Drawing.Point(284, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(315, 41);
+            this.label4.Size = new System.Drawing.Size(272, 41);
             this.label4.TabIndex = 25;
-            this.label4.Text = "Create Personnel:";
+            this.label4.Text = "Add Personnel:";
             // 
             // comboBoxDepartment
             // 
