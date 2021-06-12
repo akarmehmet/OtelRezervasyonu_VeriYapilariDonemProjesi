@@ -77,16 +77,16 @@
     <Compile Include="Forms\frmCustomer\frmMDICustomer.Designer.cs">
       <DependentUpon>frmMDICustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmCustomer\frmPersonnelCreate.cs">
+    <Compile Include="Forms\frmAdmin\frmPersonnelCreate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmCustomer\frmPersonnelCreate.Designer.cs">
+    <Compile Include="Forms\frmAdmin\frmPersonnelCreate.Designer.cs">
       <DependentUpon>frmPersonnelCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmCustomer\frmPersonnelUpdateDelete.cs">
+    <Compile Include="Forms\frmAdmin\frmPersonnelUpdateDelete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmCustomer\frmPersonnelUpdateDelete.Designer.cs">
+    <Compile Include="Forms\frmAdmin\frmPersonnelUpdateDelete.Designer.cs">
       <DependentUpon>frmPersonnelUpdateDelete.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmLogin.cs">
@@ -144,10 +144,10 @@
     <EmbeddedResource Include="Forms\frmAdmin\frmMDIAdmin.resx">
       <DependentUpon>frmMDIAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmCustomer\frmPersonnelCreate.resx">
+    <EmbeddedResource Include="Forms\frmAdmin\frmPersonnelCreate.resx">
       <DependentUpon>frmPersonnelCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmCustomer\frmPersonnelUpdateDelete.resx">
+    <EmbeddedResource Include="Forms\frmAdmin\frmPersonnelUpdateDelete.resx">
       <DependentUpon>frmPersonnelUpdateDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmLogin.resx">
