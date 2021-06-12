@@ -16,15 +16,16 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.FactoryClasses
         public static Personel GetPersonel(string openAdress, string mail, string name, string phoneNumber
                                             , string identityNumber, string department, string position)
         {
+            Personel personel = new HotelPersonel();
 
-            return new HotelPersonel()
-            {
-                Name = name,
-                IdentificationNumber = identityNumber,
-                Address = GetAdress(openAdress,"","",phoneNumber,mail),
-                Department = (Department)Enum.Parse(typeof(Department), department, true),
-                Position = (Position)Enum.Parse(typeof(Position), department, true),
-        };
+            personel.Name = name;
+            personel.IdentificationNumber = identityNumber;
+            personel.Address = GetAdress(openAdress, "", "", phoneNumber, mail);
+            personel.Department = (Department)Enum.Parse(typeof(Department), department, true);
+            personel.Position = (Position)Enum.Parse(typeof(Position), position, true);
+
+            return personel;
+
 
         }
 
