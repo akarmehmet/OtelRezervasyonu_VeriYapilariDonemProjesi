@@ -95,6 +95,20 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             }
         }
 
+        private void updateDeleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Count() == 0)
+            {
+                frmCustomer.frmPersonnelUpdateDelete frmPersonnelUpdateDelete = new frmCustomer.frmPersonnelUpdateDelete();
+                frmPersonnelUpdateDelete.MdiParent = this;
+                frmPersonnelUpdateDelete.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
         private void hotelInfoUpdateDeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.MdiChildren.Count() == 0)

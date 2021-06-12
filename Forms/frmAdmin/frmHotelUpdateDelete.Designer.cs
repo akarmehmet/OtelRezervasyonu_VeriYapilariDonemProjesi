@@ -53,7 +53,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(33, 73);
+            this.listView1.Location = new System.Drawing.Point(44, 71);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(763, 209);
             this.listView1.TabIndex = 0;
@@ -64,7 +64,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.createHotelBtn.BackColor = System.Drawing.SystemColors.HotTrack;
             this.createHotelBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.createHotelBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.createHotelBtn.Location = new System.Drawing.Point(151, 585);
+            this.createHotelBtn.Location = new System.Drawing.Point(162, 583);
             this.createHotelBtn.Name = "createHotelBtn";
             this.createHotelBtn.Size = new System.Drawing.Size(551, 44);
             this.createHotelBtn.TabIndex = 33;
@@ -74,7 +74,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.richTextBox1.Location = new System.Drawing.Point(170, 461);
+            this.richTextBox1.Location = new System.Drawing.Point(181, 459);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(186, 96);
             this.richTextBox1.TabIndex = 32;
@@ -85,7 +85,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             this.addressLbl.AutoSize = true;
             this.addressLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.addressLbl.Location = new System.Drawing.Point(76, 464);
+            this.addressLbl.Location = new System.Drawing.Point(87, 462);
             this.addressLbl.Name = "addressLbl";
             this.addressLbl.Size = new System.Drawing.Size(88, 22);
             this.addressLbl.TabIndex = 31;
@@ -96,7 +96,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             this.roomsLbl.AutoSize = true;
             this.roomsLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.roomsLbl.Location = new System.Drawing.Point(10, 417);
+            this.roomsLbl.Location = new System.Drawing.Point(21, 415);
             this.roomsLbl.Name = "roomsLbl";
             this.roomsLbl.Size = new System.Drawing.Size(154, 22);
             this.roomsLbl.TabIndex = 30;
@@ -105,7 +105,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox5.Location = new System.Drawing.Point(170, 306);
+            this.textBox5.Location = new System.Drawing.Point(181, 304);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(186, 31);
             this.textBox5.TabIndex = 29;
@@ -114,7 +114,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             this.startLbl.AutoSize = true;
             this.startLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.startLbl.Location = new System.Drawing.Point(381, 381);
+            this.startLbl.Location = new System.Drawing.Point(392, 379);
             this.startLbl.Name = "startLbl";
             this.startLbl.Size = new System.Drawing.Size(136, 22);
             this.startLbl.TabIndex = 28;
@@ -123,7 +123,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox4.Location = new System.Drawing.Point(523, 375);
+            this.textBox4.Location = new System.Drawing.Point(534, 373);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(170, 31);
             this.textBox4.TabIndex = 27;
@@ -132,7 +132,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             this.mailLbl.AutoSize = true;
             this.mailLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.mailLbl.Location = new System.Drawing.Point(113, 363);
+            this.mailLbl.Location = new System.Drawing.Point(124, 361);
             this.mailLbl.Name = "mailLbl";
             this.mailLbl.Size = new System.Drawing.Size(51, 22);
             this.mailLbl.TabIndex = 26;
@@ -141,7 +141,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox3.Location = new System.Drawing.Point(170, 414);
+            this.textBox3.Location = new System.Drawing.Point(181, 412);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(186, 31);
             this.textBox3.TabIndex = 25;
@@ -150,7 +150,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             this.phoneLbl.AutoSize = true;
             this.phoneLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.phoneLbl.Location = new System.Drawing.Point(443, 309);
+            this.phoneLbl.Location = new System.Drawing.Point(454, 307);
             this.phoneLbl.Name = "phoneLbl";
             this.phoneLbl.Size = new System.Drawing.Size(74, 22);
             this.phoneLbl.TabIndex = 24;
@@ -159,7 +159,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox2.Location = new System.Drawing.Point(523, 306);
+            this.textBox2.Location = new System.Drawing.Point(534, 304);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(170, 31);
             this.textBox2.TabIndex = 23;
@@ -168,7 +168,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             this.districtLbl.AutoSize = true;
             this.districtLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.districtLbl.Location = new System.Drawing.Point(443, 529);
+            this.districtLbl.Location = new System.Drawing.Point(454, 527);
             this.districtLbl.Name = "districtLbl";
             this.districtLbl.Size = new System.Drawing.Size(74, 22);
             this.districtLbl.TabIndex = 22;
@@ -177,7 +177,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox1.Location = new System.Drawing.Point(523, 526);
+            this.textBox1.Location = new System.Drawing.Point(534, 524);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(170, 31);
             this.textBox1.TabIndex = 21;
@@ -186,7 +186,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             this.cityLbl.AutoSize = true;
             this.cityLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.cityLbl.Location = new System.Drawing.Point(466, 449);
+            this.cityLbl.Location = new System.Drawing.Point(477, 447);
             this.cityLbl.Name = "cityLbl";
             this.cityLbl.Size = new System.Drawing.Size(51, 22);
             this.cityLbl.TabIndex = 20;
@@ -195,7 +195,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // cityTxtBx
             // 
             this.cityTxtBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.cityTxtBx.Location = new System.Drawing.Point(523, 446);
+            this.cityTxtBx.Location = new System.Drawing.Point(534, 444);
             this.cityTxtBx.Name = "cityTxtBx";
             this.cityTxtBx.Size = new System.Drawing.Size(170, 31);
             this.cityTxtBx.TabIndex = 19;
@@ -204,7 +204,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             this.nameLbl.AutoSize = true;
             this.nameLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.nameLbl.Location = new System.Drawing.Point(93, 315);
+            this.nameLbl.Location = new System.Drawing.Point(104, 313);
             this.nameLbl.Name = "nameLbl";
             this.nameLbl.Size = new System.Drawing.Size(71, 22);
             this.nameLbl.TabIndex = 18;
@@ -213,7 +213,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // hotelNameTxtBx
             // 
             this.hotelNameTxtBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.hotelNameTxtBx.Location = new System.Drawing.Point(170, 360);
+            this.hotelNameTxtBx.Location = new System.Drawing.Point(181, 358);
             this.hotelNameTxtBx.Name = "hotelNameTxtBx";
             this.hotelNameTxtBx.Size = new System.Drawing.Size(186, 31);
             this.hotelNameTxtBx.TabIndex = 17;
@@ -223,7 +223,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(35, 18);
+            this.label1.Location = new System.Drawing.Point(46, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(392, 41);
             this.label1.TabIndex = 34;
