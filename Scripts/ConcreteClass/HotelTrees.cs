@@ -66,7 +66,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
             if (node == null)
                 return;
             InOrderTrees(node.left);
-            if (node.Data.Adress.District == _district && node.Data.Adress.Province == _province)
+            if (node.Data.Adress.District == _district && node.Data.Adress.City == _province)
             {
                
                 switch (sortOrder)

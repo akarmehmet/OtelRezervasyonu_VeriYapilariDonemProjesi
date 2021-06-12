@@ -43,13 +43,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms
 
         private void Admin_Click(object sender, EventArgs e)
         {
-            Forms.frmAdmin.frmMDIAdmin frmMDIAdmin = new Forms.frmAdmin.frmMDIAdmin();
+            frmAdmin.frmMDIAdmin frmMDIAdmin = new Forms.frmAdmin.frmMDIAdmin();
             frmMDIAdmin.Show();
         }
 
         private void customer_Click(object sender, EventArgs e)
         {
-            Forms.frmCustomer.frmMDICustomer frmCustomer = new Forms.frmCustomer.frmMDICustomer();
+            frmCustomer.frmMDICustomer frmCustomer = new Forms.frmCustomer.frmMDICustomer();
             frmCustomer.Show();
         }
 

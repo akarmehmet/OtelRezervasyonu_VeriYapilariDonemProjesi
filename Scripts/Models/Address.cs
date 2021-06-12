@@ -8,7 +8,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models
 {
     public abstract class Address
     {
-        public string Province { get; set; }
+        public string City { get; set; }
         public string District { get; set; }
         public string OpenAdress { get; set; }
         public string PhoneNumber { get; set; }

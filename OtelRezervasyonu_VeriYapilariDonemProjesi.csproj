@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FactoryClasses\AccommodationFactory.cs" />
     <Compile Include="Forms\frmAdmin\frmAddRoomtoHotel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +89,16 @@
     <Compile Include="Forms\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\GetDummyData\GetDummyHotels.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scripts\AppData\HotelData.cs" />
     <Compile Include="Scripts\BST\BSTNode.cs" />
     <Compile Include="Scripts\BST\BSTrees.cs" />
+    <Compile Include="Scripts\ConcreteClass\HotelAdress.cs" />
+    <Compile Include="Scripts\ConcreteClass\HotelCommet.cs" />
+    <Compile Include="Scripts\ConcreteClass\HotelPersonel.cs" />
+    <Compile Include="Scripts\ConcreteClass\PersonelAdress.cs" />
     <Compile Include="Scripts\ConcreteClass\PersonelHeap.cs" />
     <Compile Include="Scripts\ConcreteClass\ReservationHashTable.cs" />
     <Compile Include="Scripts\ConcreteClass\ReservationHeap.cs" />
