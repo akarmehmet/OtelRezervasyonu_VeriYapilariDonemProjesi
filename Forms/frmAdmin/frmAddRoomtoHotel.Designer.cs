@@ -29,29 +29,31 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtHotelName = new System.Windows.Forms.TextBox();
             this.nameLbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRoomNo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCapacity = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtLandscapeInfo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.createHotelBtn = new System.Windows.Forms.Button();
+            this.checkBoxReservationStatus = new System.Windows.Forms.CheckBox();
+            this.btnAddRoom = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox5
+            // txtHotelName
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox5.Location = new System.Drawing.Point(194, 198);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(186, 31);
-            this.textBox5.TabIndex = 31;
+            this.txtHotelName.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtHotelName.Location = new System.Drawing.Point(194, 198);
+            this.txtHotelName.Name = "txtHotelName";
+            this.txtHotelName.Size = new System.Drawing.Size(186, 31);
+            this.txtHotelName.TabIndex = 31;
             // 
             // nameLbl
             // 
@@ -63,31 +65,31 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.nameLbl.TabIndex = 30;
             this.nameLbl.Text = "Hotel Name:";
             // 
-            // textBox1
+            // txtRoomNo
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox1.Location = new System.Drawing.Point(194, 283);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 31);
-            this.textBox1.TabIndex = 33;
+            this.txtRoomNo.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtRoomNo.Location = new System.Drawing.Point(194, 283);
+            this.txtRoomNo.Name = "txtRoomNo";
+            this.txtRoomNo.Size = new System.Drawing.Size(186, 31);
+            this.txtRoomNo.TabIndex = 33;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label1.Location = new System.Drawing.Point(81, 286);
+            this.label1.Location = new System.Drawing.Point(57, 286);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 22);
             this.label1.TabIndex = 32;
             this.label1.Text = "Room No:";
             // 
-            // textBox2
+            // txtCapacity
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox2.Location = new System.Drawing.Point(537, 277);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 31);
-            this.textBox2.TabIndex = 35;
+            this.txtCapacity.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtCapacity.Location = new System.Drawing.Point(537, 277);
+            this.txtCapacity.Name = "txtCapacity";
+            this.txtCapacity.Size = new System.Drawing.Size(186, 31);
+            this.txtCapacity.TabIndex = 35;
             // 
             // label2
             // 
@@ -95,17 +97,17 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.label2.Location = new System.Drawing.Point(439, 286);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 22);
+            this.label2.Size = new System.Drawing.Size(97, 22);
             this.label2.TabIndex = 34;
-            this.label2.Text = "People:";
+            this.label2.Text = "Capacity";
             // 
-            // textBox3
+            // txtLandscapeInfo
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox3.Location = new System.Drawing.Point(194, 360);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(186, 31);
-            this.textBox3.TabIndex = 37;
+            this.txtLandscapeInfo.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtLandscapeInfo.Location = new System.Drawing.Point(194, 360);
+            this.txtLandscapeInfo.Name = "txtLandscapeInfo";
+            this.txtLandscapeInfo.Size = new System.Drawing.Size(186, 31);
+            this.txtLandscapeInfo.TabIndex = 37;
             // 
             // label3
             // 
@@ -115,15 +117,15 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 44);
             this.label3.TabIndex = 36;
-            this.label3.Text = "     View \r\nInformation:  ";
+            this.label3.Text = "Landscape \r\nInformation:  ";
             // 
-            // textBox4
+            // txtPhone
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox4.Location = new System.Drawing.Point(537, 192);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(186, 31);
-            this.textBox4.TabIndex = 39;
+            this.txtPhone.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtPhone.Location = new System.Drawing.Point(537, 192);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(186, 31);
+            this.txtPhone.TabIndex = 39;
             // 
             // label4
             // 
@@ -139,34 +141,35 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label5.Location = new System.Drawing.Point(398, 347);
+            this.label5.Location = new System.Drawing.Point(443, 347);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 44);
             this.label5.TabIndex = 40;
             this.label5.Text = "Reservation\r\n    Status:";
             // 
-            // checkBox1
+            // checkBoxReservationStatus
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.checkBox1.Location = new System.Drawing.Point(537, 362);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(110, 26);
-            this.checkBox1.TabIndex = 44;
-            this.checkBox1.Text = "Full If Tick";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxReservationStatus.AutoSize = true;
+            this.checkBoxReservationStatus.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.checkBoxReservationStatus.Location = new System.Drawing.Point(613, 362);
+            this.checkBoxReservationStatus.Name = "checkBoxReservationStatus";
+            this.checkBoxReservationStatus.Size = new System.Drawing.Size(110, 26);
+            this.checkBoxReservationStatus.TabIndex = 44;
+            this.checkBoxReservationStatus.Text = "Full If Tick";
+            this.checkBoxReservationStatus.UseVisualStyleBackColor = true;
             // 
-            // createHotelBtn
+            // btnAddRoom
             // 
-            this.createHotelBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.createHotelBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.createHotelBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.createHotelBtn.Location = new System.Drawing.Point(148, 500);
-            this.createHotelBtn.Name = "createHotelBtn";
-            this.createHotelBtn.Size = new System.Drawing.Size(549, 64);
-            this.createHotelBtn.TabIndex = 45;
-            this.createHotelBtn.Text = "Add Room";
-            this.createHotelBtn.UseVisualStyleBackColor = false;
+            this.btnAddRoom.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAddRoom.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnAddRoom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddRoom.Location = new System.Drawing.Point(148, 500);
+            this.btnAddRoom.Name = "btnAddRoom";
+            this.btnAddRoom.Size = new System.Drawing.Size(549, 64);
+            this.btnAddRoom.TabIndex = 45;
+            this.btnAddRoom.Text = "Add Room";
+            this.btnAddRoom.UseVisualStyleBackColor = false;
+            this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
             // 
             // label6
             // 
@@ -179,6 +182,24 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.label6.TabIndex = 46;
             this.label6.Text = "Add Room";
             // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.lblPrice.Location = new System.Drawing.Point(50, 434);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(54, 22);
+            this.lblPrice.TabIndex = 36;
+            this.lblPrice.Text = "Price";
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtPrice.Location = new System.Drawing.Point(194, 425);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(186, 31);
+            this.txtPrice.TabIndex = 37;
+            // 
             // frmAddRoomtoHotel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,18 +207,20 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(839, 641);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.createHotelBtn);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.btnAddRoom);
+            this.Controls.Add(this.checkBoxReservationStatus);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtLandscapeInfo);
+            this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCapacity);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRoomNo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtHotelName);
             this.Controls.Add(this.nameLbl);
             this.Location = new System.Drawing.Point(294, 54);
             this.Name = "frmAddRoomtoHotel";
@@ -210,19 +233,21 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtHotelName;
         private System.Windows.Forms.Label nameLbl;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRoomNo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCapacity;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtLandscapeInfo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button createHotelBtn;
+        private System.Windows.Forms.CheckBox checkBoxReservationStatus;
+        private System.Windows.Forms.Button btnAddRoom;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.TextBox txtPrice;
     }
 }

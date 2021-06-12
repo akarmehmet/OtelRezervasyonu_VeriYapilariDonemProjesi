@@ -29,57 +29,58 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.createHotelBtn = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.listViewHotels = new System.Windows.Forms.ListView();
+            this.UpdateHotelBtn = new System.Windows.Forms.Button();
+            this.richTextBoxAdress = new System.Windows.Forms.RichTextBox();
             this.addressLbl = new System.Windows.Forms.Label();
-            this.roomsLbl = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.startLbl = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNumberOfStar = new System.Windows.Forms.TextBox();
             this.mailLbl = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.phoneLbl = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtHotelPhone = new System.Windows.Forms.TextBox();
             this.districtLbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDistrict = new System.Windows.Forms.TextBox();
             this.cityLbl = new System.Windows.Forms.Label();
             this.cityTxtBx = new System.Windows.Forms.TextBox();
             this.nameLbl = new System.Windows.Forms.Label();
-            this.hotelNameTxtBx = new System.Windows.Forms.TextBox();
+            this.txtHotelMail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblHotelName = new System.Windows.Forms.Label();
+            this.btnDeleteHotel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listView1
+            // listViewHotels
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(44, 71);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(763, 209);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listViewHotels.HideSelection = false;
+            this.listViewHotels.Location = new System.Drawing.Point(44, 71);
+            this.listViewHotels.Name = "listViewHotels";
+            this.listViewHotels.Size = new System.Drawing.Size(763, 209);
+            this.listViewHotels.TabIndex = 0;
+            this.listViewHotels.UseCompatibleStateImageBehavior = false;
+            this.listViewHotels.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listViewHotels_MouseDoubleClick);
             // 
-            // createHotelBtn
+            // UpdateHotelBtn
             // 
-            this.createHotelBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.createHotelBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.createHotelBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.createHotelBtn.Location = new System.Drawing.Point(162, 583);
-            this.createHotelBtn.Name = "createHotelBtn";
-            this.createHotelBtn.Size = new System.Drawing.Size(551, 44);
-            this.createHotelBtn.TabIndex = 33;
-            this.createHotelBtn.Text = "Update / Delete Hotel";
-            this.createHotelBtn.UseVisualStyleBackColor = false;
+            this.UpdateHotelBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.UpdateHotelBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.UpdateHotelBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UpdateHotelBtn.Location = new System.Drawing.Point(492, 585);
+            this.UpdateHotelBtn.Name = "UpdateHotelBtn";
+            this.UpdateHotelBtn.Size = new System.Drawing.Size(222, 44);
+            this.UpdateHotelBtn.TabIndex = 33;
+            this.UpdateHotelBtn.Text = "Update Hotel";
+            this.UpdateHotelBtn.UseVisualStyleBackColor = false;
+            this.UpdateHotelBtn.Click += new System.EventHandler(this.createHotelBtn_Click);
             // 
-            // richTextBox1
+            // richTextBoxAdress
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.richTextBox1.Location = new System.Drawing.Point(181, 459);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(186, 96);
-            this.richTextBox1.TabIndex = 32;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.richTextBoxAdress.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.richTextBoxAdress.Location = new System.Drawing.Point(181, 459);
+            this.richTextBoxAdress.Name = "richTextBoxAdress";
+            this.richTextBoxAdress.Size = new System.Drawing.Size(186, 96);
+            this.richTextBoxAdress.TabIndex = 32;
+            this.richTextBoxAdress.Text = "";
+            this.richTextBoxAdress.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // addressLbl
             // 
@@ -92,41 +93,23 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.addressLbl.Text = "Address:";
             this.addressLbl.Click += new System.EventHandler(this.addressLbl_Click);
             // 
-            // roomsLbl
-            // 
-            this.roomsLbl.AutoSize = true;
-            this.roomsLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.roomsLbl.Location = new System.Drawing.Point(21, 415);
-            this.roomsLbl.Name = "roomsLbl";
-            this.roomsLbl.Size = new System.Drawing.Size(154, 22);
-            this.roomsLbl.TabIndex = 30;
-            this.roomsLbl.Text = "Number Rooms:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox5.Location = new System.Drawing.Point(181, 304);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(186, 31);
-            this.textBox5.TabIndex = 29;
-            // 
             // startLbl
             // 
             this.startLbl.AutoSize = true;
             this.startLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.startLbl.Location = new System.Drawing.Point(392, 379);
             this.startLbl.Name = "startLbl";
-            this.startLbl.Size = new System.Drawing.Size(136, 22);
+            this.startLbl.Size = new System.Drawing.Size(129, 22);
             this.startLbl.TabIndex = 28;
-            this.startLbl.Text = "Start Number:";
+            this.startLbl.Text = "Star Number:";
             // 
-            // textBox4
+            // txtNumberOfStar
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox4.Location = new System.Drawing.Point(534, 373);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(170, 31);
-            this.textBox4.TabIndex = 27;
+            this.txtNumberOfStar.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtNumberOfStar.Location = new System.Drawing.Point(534, 373);
+            this.txtNumberOfStar.Name = "txtNumberOfStar";
+            this.txtNumberOfStar.Size = new System.Drawing.Size(170, 31);
+            this.txtNumberOfStar.TabIndex = 27;
             // 
             // mailLbl
             // 
@@ -138,14 +121,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.mailLbl.TabIndex = 26;
             this.mailLbl.Text = "Mail:";
             // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox3.Location = new System.Drawing.Point(181, 412);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(186, 31);
-            this.textBox3.TabIndex = 25;
-            // 
             // phoneLbl
             // 
             this.phoneLbl.AutoSize = true;
@@ -156,13 +131,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.phoneLbl.TabIndex = 24;
             this.phoneLbl.Text = "Phone:";
             // 
-            // textBox2
+            // txtHotelPhone
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox2.Location = new System.Drawing.Point(534, 304);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 31);
-            this.textBox2.TabIndex = 23;
+            this.txtHotelPhone.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtHotelPhone.Location = new System.Drawing.Point(534, 304);
+            this.txtHotelPhone.Name = "txtHotelPhone";
+            this.txtHotelPhone.Size = new System.Drawing.Size(170, 31);
+            this.txtHotelPhone.TabIndex = 23;
             // 
             // districtLbl
             // 
@@ -174,13 +149,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.districtLbl.TabIndex = 22;
             this.districtLbl.Text = "District:";
             // 
-            // textBox1
+            // txtDistrict
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox1.Location = new System.Drawing.Point(534, 524);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 31);
-            this.textBox1.TabIndex = 21;
+            this.txtDistrict.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtDistrict.Location = new System.Drawing.Point(534, 524);
+            this.txtDistrict.Name = "txtDistrict";
+            this.txtDistrict.Size = new System.Drawing.Size(170, 31);
+            this.txtDistrict.TabIndex = 21;
             // 
             // cityLbl
             // 
@@ -210,13 +185,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.nameLbl.TabIndex = 18;
             this.nameLbl.Text = "Name:";
             // 
-            // hotelNameTxtBx
+            // txtHotelMail
             // 
-            this.hotelNameTxtBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.hotelNameTxtBx.Location = new System.Drawing.Point(181, 358);
-            this.hotelNameTxtBx.Name = "hotelNameTxtBx";
-            this.hotelNameTxtBx.Size = new System.Drawing.Size(186, 31);
-            this.hotelNameTxtBx.TabIndex = 17;
+            this.txtHotelMail.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtHotelMail.Location = new System.Drawing.Point(181, 358);
+            this.txtHotelMail.Name = "txtHotelMail";
+            this.txtHotelMail.Size = new System.Drawing.Size(186, 31);
+            this.txtHotelMail.TabIndex = 17;
             // 
             // label1
             // 
@@ -229,6 +204,28 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.label1.TabIndex = 34;
             this.label1.Text = "Update / Delete Hotel:";
             // 
+            // lblHotelName
+            // 
+            this.lblHotelName.AutoSize = true;
+            this.lblHotelName.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.lblHotelName.Location = new System.Drawing.Point(228, 313);
+            this.lblHotelName.Name = "lblHotelName";
+            this.lblHotelName.Size = new System.Drawing.Size(0, 22);
+            this.lblHotelName.TabIndex = 18;
+            // 
+            // btnDeleteHotel
+            // 
+            this.btnDeleteHotel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnDeleteHotel.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnDeleteHotel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDeleteHotel.Location = new System.Drawing.Point(145, 585);
+            this.btnDeleteHotel.Name = "btnDeleteHotel";
+            this.btnDeleteHotel.Size = new System.Drawing.Size(222, 44);
+            this.btnDeleteHotel.TabIndex = 33;
+            this.btnDeleteHotel.Text = "Delete Hotel";
+            this.btnDeleteHotel.UseVisualStyleBackColor = false;
+            this.btnDeleteHotel.Click += new System.EventHandler(this.deleteHotelBtn_Click);
+            // 
             // frmHotelUpdateDelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,24 +233,23 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(839, 641);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.roomsLbl);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.richTextBoxAdress);
             this.Controls.Add(this.mailLbl);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.lblHotelName);
             this.Controls.Add(this.nameLbl);
-            this.Controls.Add(this.hotelNameTxtBx);
-            this.Controls.Add(this.createHotelBtn);
+            this.Controls.Add(this.txtHotelMail);
+            this.Controls.Add(this.btnDeleteHotel);
+            this.Controls.Add(this.UpdateHotelBtn);
             this.Controls.Add(this.addressLbl);
             this.Controls.Add(this.startLbl);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtNumberOfStar);
             this.Controls.Add(this.phoneLbl);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtHotelPhone);
             this.Controls.Add(this.districtLbl);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDistrict);
             this.Controls.Add(this.cityLbl);
             this.Controls.Add(this.cityTxtBx);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listViewHotels);
             this.Location = new System.Drawing.Point(294, 54);
             this.Name = "frmHotelUpdateDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -265,24 +261,23 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button createHotelBtn;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ListView listViewHotels;
+        private System.Windows.Forms.Button UpdateHotelBtn;
+        private System.Windows.Forms.RichTextBox richTextBoxAdress;
         private System.Windows.Forms.Label addressLbl;
-        private System.Windows.Forms.Label roomsLbl;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label startLbl;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNumberOfStar;
         private System.Windows.Forms.Label mailLbl;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label phoneLbl;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtHotelPhone;
         private System.Windows.Forms.Label districtLbl;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDistrict;
         private System.Windows.Forms.Label cityLbl;
         private System.Windows.Forms.TextBox cityTxtBx;
         private System.Windows.Forms.Label nameLbl;
-        private System.Windows.Forms.TextBox hotelNameTxtBx;
+        private System.Windows.Forms.TextBox txtHotelMail;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHotelName;
+        private System.Windows.Forms.Button btnDeleteHotel;
     }
 }

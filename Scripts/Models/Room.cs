@@ -11,9 +11,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models
     {
         public int RoomNumber { get; set; }
         public string PhoneNumber { get; set; }
-        public int NumberOfPeople { get; set; }
+        public int Capacity { get; set; }
         public float Price { get; set; }
-        public LandscapeInformation RoomLandscapeInformation { get; set; }
+        public string RoomLandscapeInformation { get; set; }
         public bool ReservationStatus { get; set; }
 
        

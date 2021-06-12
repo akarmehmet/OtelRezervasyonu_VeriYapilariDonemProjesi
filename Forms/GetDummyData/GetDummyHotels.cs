@@ -148,6 +148,45 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.GetDummyData
 
 
         };
+        private Room[] rooms =
+        {
+            new HotelRoom()
+            {
+                RoomNumber = 1,
+                PhoneNumber = "01",
+                Capacity = 3,
+                Price = 1500,
+                RoomLandscapeInformation = "Sea",
+                ReservationStatus = false
+            },
+            new HotelRoom()
+            {
+                RoomNumber = 2,
+                PhoneNumber = "02",
+                Capacity = 4,
+                Price = 1600,
+                RoomLandscapeInformation = "Mounhain",
+                ReservationStatus = false
+            },
+            new HotelRoom()
+            {
+                RoomNumber = 3,
+                PhoneNumber = "03",
+                Capacity = 3,
+                Price = 1500,
+                RoomLandscapeInformation = "Sea",
+                ReservationStatus = false
+            },
+            new HotelRoom()
+            {
+                RoomNumber = 4,
+                PhoneNumber = "04",
+                Capacity = 3,
+                Price = 1500,
+                RoomLandscapeInformation = "Sea",
+                ReservationStatus = false
+            }
+        };
 
         public List<AccommodationPlace> AddDummyHotel()
         {
@@ -167,7 +206,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.GetDummyData
 
                 newHotel.Comments.Add(comments[i]);
                 newHotel.Personels.Add(personels[i]);
+                newHotel.Rooms.Add(rooms[i]);
                 newHotels.Add(newHotel);
+                
             }
 
             return newHotels;

@@ -14,11 +14,15 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models
         public float Rating { get; set; }
         public List<Comment> Comments { get; set; }
         public List<Personel> Personels { get; set; }
+        public List<Room> Rooms { get; set; }
+
+        
 
         protected AccommodationPlace()
         {
             Comments = new List<Comment>();
             Personels = new List<Personel>();
+            Rooms = new List<Room>();
         }
     }
 }

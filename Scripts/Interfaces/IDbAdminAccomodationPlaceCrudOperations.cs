@@ -18,6 +18,11 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces
 
         AccommodationPlace FindAccommodationPlace(string name);
 
+        List<AccommodationPlace> GetAccommodationPlacesByInOrder();
+
+        bool AddNewRoomToAccommodationPlace(string capacity, string hotelName,string landscapeInfo,string phone,string price,string roomNo);
+        bool DeleteRoomFromAccommodationPlace(string hotelName,string roomNo);
+
 
     }
 }

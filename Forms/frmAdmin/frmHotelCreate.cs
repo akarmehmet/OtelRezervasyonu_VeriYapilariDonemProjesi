@@ -27,14 +27,26 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
 
         private void AddHotel()
         {
-          adminHotelCrudOperations.SaveNewAccomodationPlace(
+            adminHotelCrudOperations.SaveNewAccomodationPlace(
 
-                AccommodationFactory.CreateAccommodationPlace(hotelNameTxtBx.Text, hotelMailTxtBx.Text, hotelRoomsNumberTxtBx.Text,
-                                 hotelAdressTxtBx.Text,hotelPhoneTxtBx.Text,hotelStarNumberTxtBx.Text, hotelcityTxtBx.Text, hotelDisctrictTxtBx.Text)
+                  AccommodationFactory.CreateAccommodationPlace(hotelNameTxtBx.Text, hotelMailTxtBx.Text, hotelRoomsNumberTxtBx.Text,
+                                   hotelAdressTxtBx.Text, hotelPhoneTxtBx.Text, hotelStarNumberTxtBx.Text, hotelcityTxtBx.Text, hotelDisctrictTxtBx.Text)
 
-                ) ;
+                  );
 
-           
+
+        }
+
+        private void CleanTextFill()
+        {
+            hotelNameTxtBx.Text = "";
+            hotelMailTxtBx.Text = "";
+            hotelRoomsNumberTxtBx.Text = "";
+            hotelAdressTxtBx.Text = "";
+            hotelPhoneTxtBx.Text = "";
+            hotelStarNumberTxtBx.Text = "";
+            hotelcityTxtBx.Text = "";
+            hotelDisctrictTxtBx.Text = "";
         }
 
         private void createHotelBtn_Click(object sender, EventArgs e)
