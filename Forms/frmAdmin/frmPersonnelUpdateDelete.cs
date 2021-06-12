@@ -1,4 +1,5 @@
-﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations;
+﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -14,13 +15,15 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 {
     public partial class frmPersonnelUpdateDelete : Form
     {
-        private IDbAdminPersonelCrudOperations adminPersonelOperations; 
+        private IDbAdminPersonelCrudOperations adminPersonelOperations;
+        private IDbAdminAccomodationPlaceCrudOperations adminHotelCrudOperations;
 
         public frmPersonnelUpdateDelete()
         {
             InitializeComponent();
             panelPersonel.Visible = false;
             adminPersonelOperations = new AdminHotelPersonelCrupOperations();
+            adminHotelCrudOperations = new AdminHotelCrudOperations();
         }
 
 
@@ -30,7 +33,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 
         private void btnOtelPersoneli_Click(object sender, EventArgs e)
         {
-
+            adminHotelCrudOperations.FindAccommodationPlace(txtHotelName.Text);
         }
         private bool CheckIsAllTextFull()
         {
