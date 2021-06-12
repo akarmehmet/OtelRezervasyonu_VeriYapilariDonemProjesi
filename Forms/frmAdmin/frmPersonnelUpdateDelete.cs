@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +14,56 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 {
     public partial class frmPersonnelUpdateDelete : Form
     {
+        private IDbAdminPersonelCrudOperations adminPersonelOperations; 
+
         public frmPersonnelUpdateDelete()
         {
             InitializeComponent();
+            panelPersonel.Visible = false;
+            adminPersonelOperations = new AdminHotelPersonelCrupOperations();
         }
+
+
+
+
+
+
+        private void btnOtelPersoneli_Click(object sender, EventArgs e)
+        {
+
+        }
+        private bool CheckIsAllTextFull()
+        {
+            return false;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #region ChechKeyPressFunction
 
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -64,5 +112,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
                 e.Handled = true;
             }
         }
+        #endregion
+
+        
     }
 }
