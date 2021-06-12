@@ -20,7 +20,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         public frmPersonnelCreate()
         {
             InitializeComponent();
-            InitializeClassFields();
         }
 
         private void InitializeClassFields()
@@ -34,7 +33,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 
         private void addPersonelBtn_Click(object sender, EventArgs e)
         {
-            AddPersonelToHotel();
+
         }
 
 
@@ -56,31 +55,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
                         ),txtHotelName.Text)
                 )
                 {
-                    MessageBox.Show("Personel Added");
-                }
-                else
-                {
-                    MessageBox.Show("Error Occured. Please Try Again");
+
                 }
                
             }
             else
                 MessageBox.Show("Please Fill All Empty Text Fields");
 
-            CleanText();
-
-        }
-
-        private void CleanText()
-        {
-            txtAdress.Text = "";
-                            txtMail.Text = "";
-            txtSurname.Text = "";
-            txtPhone.Text = "";
-            txtTcNo.Text = "";
-            comboBoxDepartment.SelectedItem = comboBoxDepartment.Items[0];
-            comboBoxPosition.SelectedItem = comboBoxPosition.Items[0];
-                            
         }
 
 
