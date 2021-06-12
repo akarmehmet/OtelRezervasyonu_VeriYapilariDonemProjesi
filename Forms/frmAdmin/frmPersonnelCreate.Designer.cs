@@ -171,9 +171,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.addPersonelBtn.BackColor = System.Drawing.SystemColors.HotTrack;
             this.addPersonelBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.addPersonelBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addPersonelBtn.Location = new System.Drawing.Point(149, 567);
+            this.addPersonelBtn.Location = new System.Drawing.Point(149, 555);
             this.addPersonelBtn.Name = "addPersonelBtn";
-            this.addPersonelBtn.Size = new System.Drawing.Size(567, 62);
+            this.addPersonelBtn.Size = new System.Drawing.Size(595, 62);
             this.addPersonelBtn.TabIndex = 24;
             this.addPersonelBtn.Text = "Create Personnel";
             this.addPersonelBtn.UseVisualStyleBackColor = false;

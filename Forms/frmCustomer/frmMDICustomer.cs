@@ -77,5 +77,64 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
                 MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
             }
         }
+
+        private void numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Count() == 0)
+            {
+                frmCustomer.frmNumberStarsSelectedCityDistrict frmNumberStarsSelectedCityDistrict = new frmNumberStarsSelectedCityDistrict();
+                frmNumberStarsSelectedCityDistrict.MdiParent = this;
+                frmNumberStarsSelectedCityDistrict.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
+        private void hotelInfoUpdateDeleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Count() == 0)
+            {
+                frmCustomer.frmhotelComment frmhotelComment = new frmhotelComment();
+                frmhotelComment.MdiParent = this;
+                frmhotelComment.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        bool take;
+        int mouseX, mouseY;
+
+        private void adminTopMDIPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (take == true)
+            {
+                this.Left = Cursor.Position.X - mouseX;
+                this.Top = Cursor.Position.Y - mouseY;
+            }
+        }
+
+        private void adminTopMDIPanel_MouseUp(object sender, MouseEventArgs e)
+        {
+            take = false;
+            mouseX = 0;
+            mouseY = 0;
+        }
+
+        private void adminTopMDIPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            take = true;
+            mouseX = Cursor.Position.X - this.Left;
+            mouseY = Cursor.Position.Y - this.Top;
+        }
     }
 }

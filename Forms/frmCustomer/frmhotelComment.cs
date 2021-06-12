@@ -1,6 +1,4 @@
-﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations;
-using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,60 +10,14 @@ using System.Windows.Forms;
 
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 {
-    public partial class frmPersonnelUpdateDelete : Form
+    public partial class frmhotelComment : Form
     {
-        private IDbAdminPersonelCrudOperations adminPersonelOperations; 
-
-        public frmPersonnelUpdateDelete()
+        public frmhotelComment()
         {
             InitializeComponent();
-            
-            adminPersonelOperations = new AdminHotelPersonelCrupOperations();
         }
 
-
-
-
-
-
-        private void btnOtelPersoneli_Click(object sender, EventArgs e)
-        {
-
-        }
-        private bool CheckIsAllTextFull()
-        {
-            return false;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        #region ChechKeyPressFunction
-
-        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtHotelName_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
             {
@@ -77,7 +29,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             }
         }
 
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtSurname_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
             {
@@ -89,7 +41,19 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             }
         }
 
-        private void hotelNameTxtBx_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtMail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHotelScore_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
             {
@@ -100,20 +64,5 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
                 e.Handled = true;
             }
         }
-
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-        #endregion
-
-        
     }
 }

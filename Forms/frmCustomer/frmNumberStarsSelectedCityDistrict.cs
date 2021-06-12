@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 {
-    public partial class frmListbyCityDistrict : Form
+    public partial class frmNumberStarsSelectedCityDistrict : Form
     {
-        public frmListbyCityDistrict()
+        public frmNumberStarsSelectedCityDistrict()
         {
             InitializeComponent();
         }
 
-        private void hotelNameTxtBx_KeyPress(object sender, KeyPressEventArgs e)
+        private void cityTxtBx_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
             {

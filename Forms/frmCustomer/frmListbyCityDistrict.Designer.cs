@@ -56,6 +56,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.hotelNameTxtBx.Name = "hotelNameTxtBx";
             this.hotelNameTxtBx.Size = new System.Drawing.Size(213, 31);
             this.hotelNameTxtBx.TabIndex = 40;
+            this.hotelNameTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelNameTxtBx_KeyPress);
             // 
             // listbyCityDistrictBtn
             // 
@@ -95,6 +96,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.districtTxtBx.Name = "districtTxtBx";
             this.districtTxtBx.Size = new System.Drawing.Size(232, 31);
             this.districtTxtBx.TabIndex = 41;
+            this.districtTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.districtTxtBx_KeyPress);
             // 
             // districtLbl
             // 
@@ -106,7 +108,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.districtLbl.TabIndex = 42;
             this.districtLbl.Text = "District:";
             // 
-            // ListbyCityDistrict
+            // frmListbyCityDistrict
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -120,7 +122,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.Controls.Add(this.CityNameLbl);
             this.Controls.Add(this.listbyCity);
             this.Location = new System.Drawing.Point(294, 54);
-            this.Name = "ListbyCityDistrict";
+            this.Name = "frmListbyCityDistrict";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "List by City - District";
             this.ResumeLayout(false);
