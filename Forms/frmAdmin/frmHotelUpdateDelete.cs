@@ -158,6 +158,64 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
 
         }
 
+        private void cityTxtBx_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
 
+        private void txtHotelMail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtDistrict_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHotelPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtNumberOfStar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

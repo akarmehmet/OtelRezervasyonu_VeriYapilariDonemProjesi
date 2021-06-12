@@ -68,6 +68,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(186, 31);
             this.txtSurname.TabIndex = 10;
+            this.txtSurname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSurname_KeyPress);
             // 
             // nameLbl
             // 
@@ -86,6 +87,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.txtTcNo.Name = "txtTcNo";
             this.txtTcNo.Size = new System.Drawing.Size(186, 31);
             this.txtTcNo.TabIndex = 8;
+            this.txtTcNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTcNo_KeyPress);
             // 
             // label1
             // 
@@ -104,6 +106,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(186, 31);
             this.txtPhone.TabIndex = 12;
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             // 
             // txtAdress
             // 
@@ -141,6 +144,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(186, 31);
             this.txtMail.TabIndex = 18;
+            this.txtMail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMail_KeyPress);
             // 
             // label2
             // 
@@ -232,6 +236,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.txtHotelName.Name = "txtHotelName";
             this.txtHotelName.Size = new System.Drawing.Size(186, 31);
             this.txtHotelName.TabIndex = 10;
+            this.txtHotelName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHotelName_KeyPress);
             // 
             // lblHotelName
             // 
@@ -250,6 +255,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(186, 31);
             this.txtPhoneNumber.TabIndex = 18;
+            this.txtPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhoneNumber_KeyPress);
             // 
             // lblPhone
             // 

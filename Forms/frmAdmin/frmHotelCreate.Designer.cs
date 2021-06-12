@@ -56,6 +56,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.hotelNameTxtBx.Name = "hotelNameTxtBx";
             this.hotelNameTxtBx.Size = new System.Drawing.Size(186, 31);
             this.hotelNameTxtBx.TabIndex = 0;
+            this.hotelNameTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelNameTxtBx_KeyPress);
             // 
             // nameLbl
             // 
@@ -84,6 +85,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.hotelcityTxtBx.Name = "hotelcityTxtBx";
             this.hotelcityTxtBx.Size = new System.Drawing.Size(170, 31);
             this.hotelcityTxtBx.TabIndex = 2;
+            this.hotelcityTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelcityTxtBx_KeyPress);
             // 
             // districtLbl
             // 
@@ -102,6 +104,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.hotelDisctrictTxtBx.Name = "hotelDisctrictTxtBx";
             this.hotelDisctrictTxtBx.Size = new System.Drawing.Size(170, 31);
             this.hotelDisctrictTxtBx.TabIndex = 4;
+            this.hotelDisctrictTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelDisctrictTxtBx_KeyPress);
             // 
             // phoneLbl
             // 
@@ -120,6 +123,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.hotelPhoneTxtBx.Name = "hotelPhoneTxtBx";
             this.hotelPhoneTxtBx.Size = new System.Drawing.Size(170, 31);
             this.hotelPhoneTxtBx.TabIndex = 6;
+            this.hotelPhoneTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelPhoneTxtBx_KeyPress);
             // 
             // mailLbl
             // 
@@ -138,6 +142,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.hotelMailTxtBx.Name = "hotelMailTxtBx";
             this.hotelMailTxtBx.Size = new System.Drawing.Size(186, 31);
             this.hotelMailTxtBx.TabIndex = 8;
+            this.hotelMailTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelMailTxtBx_KeyPress);
             // 
             // startLbl
             // 
@@ -156,6 +161,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.hotelStarNumberTxtBx.Name = "hotelStarNumberTxtBx";
             this.hotelStarNumberTxtBx.Size = new System.Drawing.Size(170, 31);
             this.hotelStarNumberTxtBx.TabIndex = 10;
+            this.hotelStarNumberTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelStarNumberTxtBx_KeyPress);
             // 
             // roomsLbl
             // 
@@ -174,6 +180,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.hotelRoomsNumberTxtBx.Name = "hotelRoomsNumberTxtBx";
             this.hotelRoomsNumberTxtBx.Size = new System.Drawing.Size(186, 31);
             this.hotelRoomsNumberTxtBx.TabIndex = 12;
+            this.hotelRoomsNumberTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelRoomsNumberTxtBx_KeyPress);
             // 
             // addressLbl
             // 

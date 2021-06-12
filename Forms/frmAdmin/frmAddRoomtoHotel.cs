@@ -73,5 +73,65 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             else
                 return true;
         }
+
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHotelName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLandscapeInfo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtRoomNo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
