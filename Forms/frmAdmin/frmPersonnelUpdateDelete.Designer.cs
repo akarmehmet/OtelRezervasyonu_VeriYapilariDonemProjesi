@@ -133,6 +133,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(186, 31);
             this.textBox3.TabIndex = 62;
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // richTextBox1
             // 
@@ -170,6 +171,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(186, 31);
             this.textBox1.TabIndex = 58;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // phoneLbl
             // 
@@ -188,6 +190,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(186, 31);
             this.textBox2.TabIndex = 56;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // nameLbl
             // 
@@ -206,6 +209,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.hotelNameTxtBx.Name = "hotelNameTxtBx";
             this.hotelNameTxtBx.Size = new System.Drawing.Size(186, 31);
             this.hotelNameTxtBx.TabIndex = 54;
+            this.hotelNameTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelNameTxtBx_KeyPress);
             // 
             // frmPersonnelUpdateDelete
             // 

@@ -167,6 +167,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.listByDepertmantToolStripMenuItem.Name = "listByDepertmantToolStripMenuItem";
             this.listByDepertmantToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
             this.listByDepertmantToolStripMenuItem.Text = "List By Departmant";
+            this.listByDepertmantToolStripMenuItem.Click += new System.EventHandler(this.listByDepertmantToolStripMenuItem_Click);
             // 
             // hotelLogo
             // 
@@ -211,6 +212,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.Name = "frmMDIAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMDIAdmin";
             this.adminLeftMDIPanel.ResumeLayout(false);
             this.toolStripContainer1.LeftToolStripPanel.ResumeLayout(false);
