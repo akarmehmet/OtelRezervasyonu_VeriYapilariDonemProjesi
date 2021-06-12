@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\FactoryClasses\AccommodationFactory.cs" />
+    <Compile Include="Scripts\FactoryClasses\AccommodationFactory.cs" />
     <Compile Include="Forms\frmAdmin\frmAddRoomtoHotel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +115,7 @@
     <Compile Include="Scripts\DatabaseOperations\AdminHotelPersonelCrupOperations.cs" />
     <Compile Include="Scripts\DatabaseOperations\CustomerHotelCrupOperations.cs" />
     <Compile Include="Scripts\Enums\Enum.cs" />
+    <Compile Include="Scripts\FactoryClasses\PersonelFactory.cs" />
     <Compile Include="Scripts\HashTable\HashLinearNode.cs" />
     <Compile Include="Scripts\HashTable\HashLinearTable.cs" />
     <Compile Include="Scripts\Heap\HeapNode.cs" />
