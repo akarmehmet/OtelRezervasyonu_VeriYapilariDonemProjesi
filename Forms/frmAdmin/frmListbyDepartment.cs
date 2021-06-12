@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
+namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
 {
-    public partial class frmMDICustomer : Form
+    public partial class frmListbyDepartment : Form
     {
-        public frmMDICustomer()
+        public frmListbyDepartment()
         {
             InitializeComponent();
-        }
-
-        private void toolStripContainer1_RightToolStripPanel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
