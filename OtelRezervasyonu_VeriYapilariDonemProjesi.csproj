@@ -52,6 +52,18 @@
     <Compile Include="Forms\frmAdmin\frmListbyDepartment.Designer.cs">
       <DependentUpon>frmListbyDepartment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmCustomer\frmListbyHotelName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomer\frmListbyHotelName.Designer.cs">
+      <DependentUpon>frmListbyHotelName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCustomer\frmListbyCityDistrict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomer\frmListbyCityDistrict.Designer.cs">
+      <DependentUpon>frmListbyCityDistrict.cs</DependentUpon>
+    </Compile>
     <Compile Include="Scripts\FactoryClasses\AccommodationFactory.cs" />
     <Compile Include="Forms\frmAdmin\frmAddRoomtoHotel.cs">
       <SubType>Form</SubType>
@@ -160,8 +172,14 @@
     <EmbeddedResource Include="Forms\frmAdmin\frmPersonnelUpdateDelete.resx">
       <DependentUpon>frmPersonnelUpdateDelete.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomer\frmListbyHotelName.resx">
+      <DependentUpon>frmListbyHotelName.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCustomer\frmMDICustomer.resx">
       <DependentUpon>frmMDICustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomer\frmListbyCityDistrict.resx">
+      <DependentUpon>frmListbyCityDistrict.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

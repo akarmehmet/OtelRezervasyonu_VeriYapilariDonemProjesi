@@ -68,7 +68,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(0, 147);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(0, 122);
             // 
             // toolStripContainer1.LeftToolStripPanel
             // 
@@ -92,7 +92,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.personnelOperationsToolStripMenuItem});
             this.oneMenuScrip.Location = new System.Drawing.Point(0, 0);
             this.oneMenuScrip.Name = "oneMenuScrip";
-            this.oneMenuScrip.Size = new System.Drawing.Size(296, 147);
+            this.oneMenuScrip.Size = new System.Drawing.Size(296, 122);
             this.oneMenuScrip.TabIndex = 1;
             this.oneMenuScrip.Text = "menuStrip1";
             // 

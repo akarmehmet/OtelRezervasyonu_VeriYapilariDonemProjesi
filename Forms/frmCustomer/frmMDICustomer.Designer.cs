@@ -44,6 +44,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.hotelLogo = new System.Windows.Forms.PictureBox();
             this.adminTopMDIPanel = new System.Windows.Forms.Panel();
             this.exit = new System.Windows.Forms.PictureBox();
+            this.hotelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cityDistrictToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminLeftMDIPanel.SuspendLayout();
             this.toolStripContainer1.LeftToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -58,10 +61,10 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.adminLeftMDIPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.adminLeftMDIPanel.Controls.Add(this.toolStripContainer1);
             this.adminLeftMDIPanel.Controls.Add(this.hotelLogo);
-            this.adminLeftMDIPanel.Location = new System.Drawing.Point(-9, -19);
+            this.adminLeftMDIPanel.Location = new System.Drawing.Point(-1, 0);
             this.adminLeftMDIPanel.Name = "adminLeftMDIPanel";
             this.adminLeftMDIPanel.Size = new System.Drawing.Size(294, 744);
-            this.adminLeftMDIPanel.TabIndex = 9;
+            this.adminLeftMDIPanel.TabIndex = 12;
             // 
             // toolStripContainer1
             // 
@@ -114,9 +117,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             // 
             // newHotelCreateToolStripMenuItem
             // 
+            this.newHotelCreateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hotelToolStripMenuItem,
+            this.cityDistrictToolStripMenuItem,
+            this.numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem});
             this.newHotelCreateToolStripMenuItem.Name = "newHotelCreateToolStripMenuItem";
             this.newHotelCreateToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
-            this.newHotelCreateToolStripMenuItem.Text = "Create";
+            this.newHotelCreateToolStripMenuItem.Text = "List By";
             // 
             // hotelInfoUpdateDeleteToolStripMenuItem
             // 
@@ -177,10 +184,10 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             // 
             this.adminTopMDIPanel.BackColor = System.Drawing.SystemColors.HotTrack;
             this.adminTopMDIPanel.Controls.Add(this.exit);
-            this.adminTopMDIPanel.Location = new System.Drawing.Point(284, -19);
+            this.adminTopMDIPanel.Location = new System.Drawing.Point(292, 0);
             this.adminTopMDIPanel.Name = "adminTopMDIPanel";
             this.adminTopMDIPanel.Size = new System.Drawing.Size(863, 55);
-            this.adminTopMDIPanel.TabIndex = 10;
+            this.adminTopMDIPanel.TabIndex = 13;
             // 
             // exit
             // 
@@ -192,11 +199,31 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.exit.TabIndex = 0;
             this.exit.TabStop = false;
             // 
+            // hotelToolStripMenuItem
+            // 
+            this.hotelToolStripMenuItem.Name = "hotelToolStripMenuItem";
+            this.hotelToolStripMenuItem.Size = new System.Drawing.Size(440, 26);
+            this.hotelToolStripMenuItem.Text = "Hotel";
+            this.hotelToolStripMenuItem.Click += new System.EventHandler(this.hotelToolStripMenuItem_Click_1);
+            // 
+            // cityDistrictToolStripMenuItem
+            // 
+            this.cityDistrictToolStripMenuItem.Name = "cityDistrictToolStripMenuItem";
+            this.cityDistrictToolStripMenuItem.Size = new System.Drawing.Size(440, 26);
+            this.cityDistrictToolStripMenuItem.Text = "City - District";
+            this.cityDistrictToolStripMenuItem.Click += new System.EventHandler(this.cityDistrictToolStripMenuItem_Click_1);
+            // 
+            // numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem
+            // 
+            this.numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem.Name = "numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem";
+            this.numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem.Size = new System.Drawing.Size(440, 26);
+            this.numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem.Text = "Number of Stars in Selected City -District";
+            // 
             // frmMDICustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 706);
+            this.ClientSize = new System.Drawing.Size(1155, 745);
             this.Controls.Add(this.adminLeftMDIPanel);
             this.Controls.Add(this.adminTopMDIPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -234,5 +261,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.PictureBox hotelLogo;
         private System.Windows.Forms.Panel adminTopMDIPanel;
         private System.Windows.Forms.PictureBox exit;
+        private System.Windows.Forms.ToolStripMenuItem hotelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cityDistrictToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem;
     }
 }
