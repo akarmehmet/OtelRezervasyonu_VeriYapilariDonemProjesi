@@ -30,12 +30,12 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private void InitializeComponent()
         {
             this.listbyCity = new System.Windows.Forms.Label();
-            this.hotelNameTxtBx = new System.Windows.Forms.TextBox();
             this.listbyCityDistrictBtn = new System.Windows.Forms.Button();
-            this.HotelsLstVw = new System.Windows.Forms.ListView();
+            this.listViewHotel = new System.Windows.Forms.ListView();
             this.CityNameLbl = new System.Windows.Forms.Label();
-            this.districtTxtBx = new System.Windows.Forms.TextBox();
+            this.txtdistrict = new System.Windows.Forms.TextBox();
             this.districtLbl = new System.Windows.Forms.Label();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listbyCity
@@ -49,15 +49,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.listbyCity.TabIndex = 32;
             this.listbyCity.Text = "List by City - District:";
             // 
-            // hotelNameTxtBx
-            // 
-            this.hotelNameTxtBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.hotelNameTxtBx.Location = new System.Drawing.Point(171, 122);
-            this.hotelNameTxtBx.Name = "hotelNameTxtBx";
-            this.hotelNameTxtBx.Size = new System.Drawing.Size(213, 31);
-            this.hotelNameTxtBx.TabIndex = 40;
-            this.hotelNameTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelNameTxtBx_KeyPress);
-            // 
             // listbyCityDistrictBtn
             // 
             this.listbyCityDistrictBtn.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -69,15 +60,16 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.listbyCityDistrictBtn.TabIndex = 39;
             this.listbyCityDistrictBtn.Text = "List by City - District";
             this.listbyCityDistrictBtn.UseVisualStyleBackColor = false;
+            this.listbyCityDistrictBtn.Click += new System.EventHandler(this.listbyCityDistrictBtn_Click);
             // 
-            // HotelsLstVw
+            // listViewHotel
             // 
-            this.HotelsLstVw.HideSelection = false;
-            this.HotelsLstVw.Location = new System.Drawing.Point(32, 269);
-            this.HotelsLstVw.Name = "HotelsLstVw";
-            this.HotelsLstVw.Size = new System.Drawing.Size(770, 330);
-            this.HotelsLstVw.TabIndex = 38;
-            this.HotelsLstVw.UseCompatibleStateImageBehavior = false;
+            this.listViewHotel.HideSelection = false;
+            this.listViewHotel.Location = new System.Drawing.Point(32, 269);
+            this.listViewHotel.Name = "listViewHotel";
+            this.listViewHotel.Size = new System.Drawing.Size(770, 330);
+            this.listViewHotel.TabIndex = 38;
+            this.listViewHotel.UseCompatibleStateImageBehavior = false;
             // 
             // CityNameLbl
             // 
@@ -89,14 +81,14 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.CityNameLbl.TabIndex = 37;
             this.CityNameLbl.Text = "City:";
             // 
-            // districtTxtBx
+            // txtdistrict
             // 
-            this.districtTxtBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.districtTxtBx.Location = new System.Drawing.Point(525, 122);
-            this.districtTxtBx.Name = "districtTxtBx";
-            this.districtTxtBx.Size = new System.Drawing.Size(232, 31);
-            this.districtTxtBx.TabIndex = 41;
-            this.districtTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.districtTxtBx_KeyPress);
+            this.txtdistrict.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtdistrict.Location = new System.Drawing.Point(525, 122);
+            this.txtdistrict.Name = "txtdistrict";
+            this.txtdistrict.Size = new System.Drawing.Size(232, 31);
+            this.txtdistrict.TabIndex = 41;
+            this.txtdistrict.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.districtTxtBx_KeyPress);
             // 
             // districtLbl
             // 
@@ -108,6 +100,15 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.districtLbl.TabIndex = 42;
             this.districtLbl.Text = "District:";
             // 
+            // txtCity
+            // 
+            this.txtCity.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtCity.Location = new System.Drawing.Point(171, 122);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(213, 31);
+            this.txtCity.TabIndex = 40;
+            this.txtCity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelNameTxtBx_KeyPress);
+            // 
             // frmListbyCityDistrict
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,10 +116,10 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(839, 641);
             this.Controls.Add(this.districtLbl);
-            this.Controls.Add(this.districtTxtBx);
-            this.Controls.Add(this.hotelNameTxtBx);
+            this.Controls.Add(this.txtdistrict);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.listbyCityDistrictBtn);
-            this.Controls.Add(this.HotelsLstVw);
+            this.Controls.Add(this.listViewHotel);
             this.Controls.Add(this.CityNameLbl);
             this.Controls.Add(this.listbyCity);
             this.Location = new System.Drawing.Point(294, 54);
@@ -133,11 +134,11 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         #endregion
 
         private System.Windows.Forms.Label listbyCity;
-        private System.Windows.Forms.TextBox hotelNameTxtBx;
         private System.Windows.Forms.Button listbyCityDistrictBtn;
-        private System.Windows.Forms.ListView HotelsLstVw;
+        private System.Windows.Forms.ListView listViewHotel;
         private System.Windows.Forms.Label CityNameLbl;
-        private System.Windows.Forms.TextBox districtTxtBx;
+        private System.Windows.Forms.TextBox txtdistrict;
         private System.Windows.Forms.Label districtLbl;
+        private System.Windows.Forms.TextBox txtCity;
     }
 }
