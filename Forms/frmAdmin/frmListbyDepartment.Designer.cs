@@ -33,8 +33,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.panelPersonel = new System.Windows.Forms.Panel();
             this.listbyDepartmentBtn = new System.Windows.Forms.Button();
             this.listViewPersonel = new System.Windows.Forms.ListView();
-            this.positionCmbBx = new System.Windows.Forms.ComboBox();
-            this.positionLbl = new System.Windows.Forms.Label();
+            this.comboboxDepartment = new System.Windows.Forms.ComboBox();
+            this.lblDepartment = new System.Windows.Forms.Label();
             this.lblHotelName = new System.Windows.Forms.Label();
             this.txtHotelName = new System.Windows.Forms.TextBox();
             this.btnFindHotel = new System.Windows.Forms.Button();
@@ -46,7 +46,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.listbyDepartment.AutoSize = true;
             this.listbyDepartment.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listbyDepartment.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.listbyDepartment.Location = new System.Drawing.Point(200, 9);
+            this.listbyDepartment.Location = new System.Drawing.Point(94, 18);
             this.listbyDepartment.Name = "listbyDepartment";
             this.listbyDepartment.Size = new System.Drawing.Size(339, 41);
             this.listbyDepartment.TabIndex = 26;
@@ -56,8 +56,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // 
             this.panelPersonel.Controls.Add(this.listbyDepartmentBtn);
             this.panelPersonel.Controls.Add(this.listViewPersonel);
-            this.panelPersonel.Controls.Add(this.positionCmbBx);
-            this.panelPersonel.Controls.Add(this.positionLbl);
+            this.panelPersonel.Controls.Add(this.comboboxDepartment);
+            this.panelPersonel.Controls.Add(this.lblDepartment);
             this.panelPersonel.Location = new System.Drawing.Point(6, 143);
             this.panelPersonel.Name = "panelPersonel";
             this.panelPersonel.Size = new System.Drawing.Size(821, 497);
@@ -86,60 +86,66 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.listViewPersonel.TabIndex = 33;
             this.listViewPersonel.UseCompatibleStateImageBehavior = false;
             // 
-            // positionCmbBx
+            // comboboxDepartment
             // 
-            this.positionCmbBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.positionCmbBx.FormattingEnabled = true;
-            this.positionCmbBx.Items.AddRange(new object[] {
-            "Manager",
-            "AssistantDirector",
-            "Chef",
-            "SecurityGuard",
-            "ReceptionChief",
-            "WarehouseSupervisor",
-            "Dishwasher",
-            "ITStaff",
-            "PurchasingManager"});
-            this.positionCmbBx.Location = new System.Drawing.Point(365, 30);
-            this.positionCmbBx.Name = "positionCmbBx";
-            this.positionCmbBx.Size = new System.Drawing.Size(239, 30);
-            this.positionCmbBx.TabIndex = 32;
+            this.comboboxDepartment.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.comboboxDepartment.FormattingEnabled = true;
+            this.comboboxDepartment.Items.AddRange(new object[] {
+            "FrontOffice",
+            "FoodAndBeverage",
+            "Housekeeping",
+            "Marketing",
+            "Accounting",
+            "HumanResources",
+            "Security",
+            "Computing",
+            "Staff",
+            "TechnicalService"});
+            this.comboboxDepartment.Location = new System.Drawing.Point(365, 30);
+            this.comboboxDepartment.Name = "comboboxDepartment";
+            this.comboboxDepartment.Size = new System.Drawing.Size(239, 30);
+            this.comboboxDepartment.TabIndex = 32;
             // 
-            // positionLbl
+            // lblDepartment
             // 
-            this.positionLbl.AutoSize = true;
-            this.positionLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.positionLbl.Location = new System.Drawing.Point(197, 29);
-            this.positionLbl.Name = "positionLbl";
-            this.positionLbl.Size = new System.Drawing.Size(82, 22);
-            this.positionLbl.TabIndex = 31;
-            this.positionLbl.Text = "Position:";
+            this.lblDepartment.AutoSize = true;
+            this.lblDepartment.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.lblDepartment.Location = new System.Drawing.Point(197, 29);
+            this.lblDepartment.Name = "lblDepartment";
+            this.lblDepartment.Size = new System.Drawing.Size(123, 22);
+            this.lblDepartment.TabIndex = 31;
+            this.lblDepartment.Text = "Department";
             // 
             // lblHotelName
             // 
             this.lblHotelName.AutoSize = true;
-            this.lblHotelName.Location = new System.Drawing.Point(62, 89);
+            this.lblHotelName.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.lblHotelName.Location = new System.Drawing.Point(146, 81);
             this.lblHotelName.Name = "lblHotelName";
-            this.lblHotelName.Size = new System.Drawing.Size(63, 13);
+            this.lblHotelName.Size = new System.Drawing.Size(118, 22);
             this.lblHotelName.TabIndex = 32;
             this.lblHotelName.Text = "Hotel Name";
             // 
             // txtHotelName
             // 
-            this.txtHotelName.Location = new System.Drawing.Point(185, 83);
+            this.txtHotelName.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtHotelName.Location = new System.Drawing.Point(270, 78);
             this.txtHotelName.Name = "txtHotelName";
-            this.txtHotelName.Size = new System.Drawing.Size(100, 20);
+            this.txtHotelName.Size = new System.Drawing.Size(163, 31);
             this.txtHotelName.TabIndex = 33;
+            this.txtHotelName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHotelName_KeyPress);
             // 
             // btnFindHotel
             // 
-            this.btnFindHotel.Location = new System.Drawing.Point(425, 80);
+            this.btnFindHotel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnFindHotel.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnFindHotel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFindHotel.Location = new System.Drawing.Point(515, 72);
             this.btnFindHotel.Name = "btnFindHotel";
-            this.btnFindHotel.Size = new System.Drawing.Size(75, 23);
+            this.btnFindHotel.Size = new System.Drawing.Size(185, 40);
             this.btnFindHotel.TabIndex = 34;
             this.btnFindHotel.Text = "Find Hotel";
             this.btnFindHotel.UseVisualStyleBackColor = true;
-            this.btnFindHotel.Click += new System.EventHandler(this.btnFindHotel_Click);
             // 
             // frmListbyDepartment
             // 
@@ -169,8 +175,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
         private System.Windows.Forms.Panel panelPersonel;
         private System.Windows.Forms.Button listbyDepartmentBtn;
         private System.Windows.Forms.ListView listViewPersonel;
-        private System.Windows.Forms.ComboBox positionCmbBx;
-        private System.Windows.Forms.Label positionLbl;
+        private System.Windows.Forms.ComboBox comboboxDepartment;
+        private System.Windows.Forms.Label lblDepartment;
         private System.Windows.Forms.Label lblHotelName;
         private System.Windows.Forms.TextBox txtHotelName;
         private System.Windows.Forms.Button btnFindHotel;
