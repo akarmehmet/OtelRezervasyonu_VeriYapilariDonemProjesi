@@ -30,15 +30,15 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
         private void InitializeComponent()
         {
             this.listbyDepartment = new System.Windows.Forms.Label();
-            this.personelPanel = new System.Windows.Forms.Panel();
+            this.panelPersonel = new System.Windows.Forms.Panel();
             this.listbyDepartmentBtn = new System.Windows.Forms.Button();
-            this.departmentLstVw = new System.Windows.Forms.ListView();
+            this.listViewPersonel = new System.Windows.Forms.ListView();
             this.positionCmbBx = new System.Windows.Forms.ComboBox();
             this.positionLbl = new System.Windows.Forms.Label();
             this.lblHotelName = new System.Windows.Forms.Label();
             this.txtHotelName = new System.Windows.Forms.TextBox();
             this.btnFindHotel = new System.Windows.Forms.Button();
-            this.personelPanel.SuspendLayout();
+            this.panelPersonel.SuspendLayout();
             this.SuspendLayout();
             // 
             // listbyDepartment
@@ -52,17 +52,17 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.listbyDepartment.TabIndex = 26;
             this.listbyDepartment.Text = "List by Department:";
             // 
-            // personelPanel
+            // panelPersonel
             // 
-            this.personelPanel.Controls.Add(this.listbyDepartmentBtn);
-            this.personelPanel.Controls.Add(this.departmentLstVw);
-            this.personelPanel.Controls.Add(this.positionCmbBx);
-            this.personelPanel.Controls.Add(this.positionLbl);
-            this.personelPanel.Location = new System.Drawing.Point(6, 143);
-            this.personelPanel.Name = "personelPanel";
-            this.personelPanel.Size = new System.Drawing.Size(821, 497);
-            this.personelPanel.TabIndex = 31;
-            this.personelPanel.Visible = false;
+            this.panelPersonel.Controls.Add(this.listbyDepartmentBtn);
+            this.panelPersonel.Controls.Add(this.listViewPersonel);
+            this.panelPersonel.Controls.Add(this.positionCmbBx);
+            this.panelPersonel.Controls.Add(this.positionLbl);
+            this.panelPersonel.Location = new System.Drawing.Point(6, 143);
+            this.panelPersonel.Name = "panelPersonel";
+            this.panelPersonel.Size = new System.Drawing.Size(821, 497);
+            this.panelPersonel.TabIndex = 31;
+            this.panelPersonel.Visible = false;
             // 
             // listbyDepartmentBtn
             // 
@@ -75,15 +75,16 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.listbyDepartmentBtn.TabIndex = 34;
             this.listbyDepartmentBtn.Text = "List by Department";
             this.listbyDepartmentBtn.UseVisualStyleBackColor = false;
+            this.listbyDepartmentBtn.Click += new System.EventHandler(this.listbyDepartmentBtn_Click);
             // 
-            // departmentLstVw
+            // listViewPersonel
             // 
-            this.departmentLstVw.HideSelection = false;
-            this.departmentLstVw.Location = new System.Drawing.Point(33, 164);
-            this.departmentLstVw.Name = "departmentLstVw";
-            this.departmentLstVw.Size = new System.Drawing.Size(770, 330);
-            this.departmentLstVw.TabIndex = 33;
-            this.departmentLstVw.UseCompatibleStateImageBehavior = false;
+            this.listViewPersonel.HideSelection = false;
+            this.listViewPersonel.Location = new System.Drawing.Point(33, 164);
+            this.listViewPersonel.Name = "listViewPersonel";
+            this.listViewPersonel.Size = new System.Drawing.Size(770, 330);
+            this.listViewPersonel.TabIndex = 33;
+            this.listViewPersonel.UseCompatibleStateImageBehavior = false;
             // 
             // positionCmbBx
             // 
@@ -138,6 +139,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.btnFindHotel.TabIndex = 34;
             this.btnFindHotel.Text = "Find Hotel";
             this.btnFindHotel.UseVisualStyleBackColor = true;
+            this.btnFindHotel.Click += new System.EventHandler(this.btnFindHotel_Click);
             // 
             // frmListbyDepartment
             // 
@@ -148,14 +150,14 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.Controls.Add(this.btnFindHotel);
             this.Controls.Add(this.txtHotelName);
             this.Controls.Add(this.lblHotelName);
-            this.Controls.Add(this.personelPanel);
+            this.Controls.Add(this.panelPersonel);
             this.Controls.Add(this.listbyDepartment);
             this.Location = new System.Drawing.Point(294, 54);
             this.Name = "frmListbyDepartment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "List by Department";
-            this.personelPanel.ResumeLayout(false);
-            this.personelPanel.PerformLayout();
+            this.panelPersonel.ResumeLayout(false);
+            this.panelPersonel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,9 +166,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
         #endregion
 
         private System.Windows.Forms.Label listbyDepartment;
-        private System.Windows.Forms.Panel personelPanel;
+        private System.Windows.Forms.Panel panelPersonel;
         private System.Windows.Forms.Button listbyDepartmentBtn;
-        private System.Windows.Forms.ListView departmentLstVw;
+        private System.Windows.Forms.ListView listViewPersonel;
         private System.Windows.Forms.ComboBox positionCmbBx;
         private System.Windows.Forms.Label positionLbl;
         private System.Windows.Forms.Label lblHotelName;
