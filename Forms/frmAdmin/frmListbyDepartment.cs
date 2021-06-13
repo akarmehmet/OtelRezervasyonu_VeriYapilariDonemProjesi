@@ -84,5 +84,17 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
         {
 
         }
+
+        private void txtHotelName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
