@@ -92,7 +92,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.findPersonel.Name = "findPersonel";
             this.findPersonel.Size = new System.Drawing.Size(232, 44);
             this.findPersonel.TabIndex = 84;
-            this.findPersonel.Text = "Find Personel";
+            this.findPersonel.Text = "Find Hotel";
             this.findPersonel.UseVisualStyleBackColor = false;
             this.findPersonel.Click += new System.EventHandler(this.findPersonel_Click);
             // 

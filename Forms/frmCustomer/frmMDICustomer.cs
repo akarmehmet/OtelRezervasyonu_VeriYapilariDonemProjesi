@@ -130,6 +130,34 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             mouseY = 0;
         }
 
+        private void makeReservationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Count() == 0)
+            {
+                frmCustomer.frmMakeReservation frmMakeReservation = new frmMakeReservation();
+                frmMakeReservation.MdiParent = this;
+                frmMakeReservation.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
+        private void aZOfReservationNamesAndSurnamesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Count() == 0)
+            {
+                frmCustomer.frmRezNameSurnameAZ frmRezNameSurnameAZ = new frmRezNameSurnameAZ();
+                frmRezNameSurnameAZ.MdiParent = this;
+                frmRezNameSurnameAZ.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
         private void adminTopMDIPanel_MouseDown(object sender, MouseEventArgs e)
         {
             take = true;
