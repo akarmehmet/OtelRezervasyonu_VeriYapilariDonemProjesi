@@ -1,4 +1,7 @@
-﻿using System;
+﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,21 +15,43 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 {
     public partial class frmListbyHotelName : Form
     {
+
+        private IDbCustomerAccomodationPlaceCrudOperations customerHotelCrudOperations;
         public frmListbyHotelName()
         {
             InitializeComponent();
+
+            customerHotelCrudOperations = new CustomerHotelCrupOperations();
+            GetAllHotelOrderByName();
         }
 
-        private void hotelNameTxtBx_KeyPress(object sender, KeyPressEventArgs e)
+
+        private void GetAllHotelOrderByName()
         {
-            if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
+
+            List<AccommodationPlace> hotels = customerHotelCrudOperations.GetAccommodationPlacesOrderByName();
+
+            if(hotels == null || hotels.Count < 0)
             {
-                e.Handled = false;
+                MessageBox.Show("There is no hotel in system. Please add first");
+                return;
             }
-            else
+
+            foreach (var hotel in hotels)
             {
-                e.Handled = true;
+                ListViewItem hotelItem = new ListViewItem
+                {
+                    Text = hotel.Name,
+                    ToolTipText = $"Phone Number :{hotel.Adress.PhoneNumber}, City : {hotel.Adress.City}",
+                    Tag = hotel
+                };
+
+                listViewHotel.Items.Add(hotelItem);
             }
+
+            listViewHotel.ShowItemToolTips = true;
         }
+
+        
     }
 }

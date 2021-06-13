@@ -29,63 +29,29 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         /// </summary>
         private void InitializeComponent()
         {
-            this.listbyHotelNameBtn = new System.Windows.Forms.Button();
-            this.HotelsLstVw = new System.Windows.Forms.ListView();
-            this.HotelNameLbl = new System.Windows.Forms.Label();
+            this.listViewHotel = new System.Windows.Forms.ListView();
             this.listbyHotelName = new System.Windows.Forms.Label();
-            this.hotelNameTxtBx = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // listbyHotelNameBtn
+            // listViewHotel
             // 
-            this.listbyHotelNameBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.listbyHotelNameBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.listbyHotelNameBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.listbyHotelNameBtn.Location = new System.Drawing.Point(142, 185);
-            this.listbyHotelNameBtn.Name = "listbyHotelNameBtn";
-            this.listbyHotelNameBtn.Size = new System.Drawing.Size(567, 62);
-            this.listbyHotelNameBtn.TabIndex = 35;
-            this.listbyHotelNameBtn.Text = "List by Hotel Name";
-            this.listbyHotelNameBtn.UseVisualStyleBackColor = false;
-            // 
-            // HotelsLstVw
-            // 
-            this.HotelsLstVw.HideSelection = false;
-            this.HotelsLstVw.Location = new System.Drawing.Point(34, 278);
-            this.HotelsLstVw.Name = "HotelsLstVw";
-            this.HotelsLstVw.Size = new System.Drawing.Size(770, 330);
-            this.HotelsLstVw.TabIndex = 34;
-            this.HotelsLstVw.UseCompatibleStateImageBehavior = false;
-            // 
-            // HotelNameLbl
-            // 
-            this.HotelNameLbl.AutoSize = true;
-            this.HotelNameLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.HotelNameLbl.Location = new System.Drawing.Point(229, 116);
-            this.HotelNameLbl.Name = "HotelNameLbl";
-            this.HotelNameLbl.Size = new System.Drawing.Size(123, 22);
-            this.HotelNameLbl.TabIndex = 32;
-            this.HotelNameLbl.Text = "Hotel Name:";
+            this.listViewHotel.HideSelection = false;
+            this.listViewHotel.Location = new System.Drawing.Point(34, 83);
+            this.listViewHotel.Name = "listViewHotel";
+            this.listViewHotel.Size = new System.Drawing.Size(770, 525);
+            this.listViewHotel.TabIndex = 34;
+            this.listViewHotel.UseCompatibleStateImageBehavior = false;
             // 
             // listbyHotelName
             // 
             this.listbyHotelName.AutoSize = true;
             this.listbyHotelName.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listbyHotelName.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.listbyHotelName.Location = new System.Drawing.Point(69, 32);
+            this.listbyHotelName.Location = new System.Drawing.Point(254, 24);
             this.listbyHotelName.Name = "listbyHotelName";
             this.listbyHotelName.Size = new System.Drawing.Size(339, 41);
             this.listbyHotelName.TabIndex = 31;
             this.listbyHotelName.Text = "List by Hotel Name:";
-            // 
-            // hotelNameTxtBx
-            // 
-            this.hotelNameTxtBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.hotelNameTxtBx.Location = new System.Drawing.Point(358, 113);
-            this.hotelNameTxtBx.Name = "hotelNameTxtBx";
-            this.hotelNameTxtBx.Size = new System.Drawing.Size(265, 31);
-            this.hotelNameTxtBx.TabIndex = 36;
-            this.hotelNameTxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.hotelNameTxtBx_KeyPress);
             // 
             // frmListbyHotelName
             // 
@@ -93,10 +59,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(839, 641);
-            this.Controls.Add(this.hotelNameTxtBx);
-            this.Controls.Add(this.listbyHotelNameBtn);
-            this.Controls.Add(this.HotelsLstVw);
-            this.Controls.Add(this.HotelNameLbl);
+            this.Controls.Add(this.listViewHotel);
             this.Controls.Add(this.listbyHotelName);
             this.Location = new System.Drawing.Point(294, 54);
             this.Name = "frmListbyHotelName";
@@ -108,11 +71,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         }
 
         #endregion
-
-        private System.Windows.Forms.Button listbyHotelNameBtn;
-        private System.Windows.Forms.ListView HotelsLstVw;
-        private System.Windows.Forms.Label HotelNameLbl;
+        private System.Windows.Forms.ListView listViewHotel;
         private System.Windows.Forms.Label listbyHotelName;
-        private System.Windows.Forms.TextBox hotelNameTxtBx;
     }
 }
