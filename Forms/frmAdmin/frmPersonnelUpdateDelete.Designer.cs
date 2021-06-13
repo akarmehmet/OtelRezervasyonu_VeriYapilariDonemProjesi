@@ -41,7 +41,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.mailLbl = new System.Windows.Forms.Label();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.txtAdress = new System.Windows.Forms.RichTextBox();
-            this.listViewHotel = new System.Windows.Forms.ListView();
+            this.listViewPersonel = new System.Windows.Forms.ListView();
             this.addressLbl = new System.Windows.Forms.Label();
             this.UpdatePersonelButton = new System.Windows.Forms.Button();
             this.DeletePersonelButton = new System.Windows.Forms.Button();
@@ -94,6 +94,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.findPersonel.TabIndex = 84;
             this.findPersonel.Text = "Find Personel";
             this.findPersonel.UseVisualStyleBackColor = false;
+            this.findPersonel.Click += new System.EventHandler(this.findPersonel_Click);
             // 
             // panelPersonel
             // 
@@ -104,7 +105,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.panelPersonel.Controls.Add(this.mailLbl);
             this.panelPersonel.Controls.Add(this.txtMail);
             this.panelPersonel.Controls.Add(this.txtAdress);
-            this.panelPersonel.Controls.Add(this.listViewHotel);
+            this.panelPersonel.Controls.Add(this.listViewPersonel);
             this.panelPersonel.Controls.Add(this.addressLbl);
             this.panelPersonel.Controls.Add(this.UpdatePersonelButton);
             this.panelPersonel.Controls.Add(this.DeletePersonelButton);
@@ -122,6 +123,16 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             // comboBoxPosition
             // 
             this.comboBoxPosition.FormattingEnabled = true;
+            this.comboBoxPosition.Items.AddRange(new object[] {
+            "Manager",
+            "AssistantDirector",
+            "Chef",
+            "SecurityGuard",
+            "ReceptionChief",
+            "WarehouseSupervisor",
+            "Dishwasher",
+            "ITStaff",
+            "PurchasingManager"});
             this.comboBoxPosition.Location = new System.Drawing.Point(538, 264);
             this.comboBoxPosition.Name = "comboBoxPosition";
             this.comboBoxPosition.Size = new System.Drawing.Size(189, 21);
@@ -130,6 +141,17 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             // comboBoxDepartment
             // 
             this.comboBoxDepartment.FormattingEnabled = true;
+            this.comboBoxDepartment.Items.AddRange(new object[] {
+            "FrontOffice",
+            "FoodAndBeverage",
+            "Housekeeping",
+            "Marketing",
+            "Accounting",
+            "HumanResources",
+            "Security",
+            "Computing",
+            "Staff",
+            "TechnicalService"});
             this.comboBoxDepartment.Location = new System.Drawing.Point(538, 231);
             this.comboBoxDepartment.Name = "comboBoxDepartment";
             this.comboBoxDepartment.Size = new System.Drawing.Size(189, 21);
@@ -182,15 +204,15 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.txtAdress.TabIndex = 93;
             this.txtAdress.Text = "";
             // 
-            // listViewHotel
+            // listViewPersonel
             // 
-            this.listViewHotel.HideSelection = false;
-            this.listViewHotel.Location = new System.Drawing.Point(26, 3);
-            this.listViewHotel.Name = "listViewHotel";
-            this.listViewHotel.Size = new System.Drawing.Size(763, 209);
-            this.listViewHotel.TabIndex = 84;
-            this.listViewHotel.UseCompatibleStateImageBehavior = false;
-            this.listViewHotel.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listViewHotel_MouseDoubleClick);
+            this.listViewPersonel.HideSelection = false;
+            this.listViewPersonel.Location = new System.Drawing.Point(26, 3);
+            this.listViewPersonel.Name = "listViewPersonel";
+            this.listViewPersonel.Size = new System.Drawing.Size(763, 209);
+            this.listViewPersonel.TabIndex = 84;
+            this.listViewPersonel.UseCompatibleStateImageBehavior = false;
+            this.listViewPersonel.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listViewHotel_MouseDoubleClick);
             // 
             // addressLbl
             // 
@@ -211,7 +233,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.UpdatePersonelButton.Name = "UpdatePersonelButton";
             this.UpdatePersonelButton.Size = new System.Drawing.Size(191, 44);
             this.UpdatePersonelButton.TabIndex = 85;
-            this.UpdatePersonelButton.Text = "Update Hotel";
+            this.UpdatePersonelButton.Text = "Update Personel";
             this.UpdatePersonelButton.UseVisualStyleBackColor = false;
             this.UpdatePersonelButton.Click += new System.EventHandler(this.UpdatePersonelButton_Click);
             // 
@@ -224,7 +246,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.DeletePersonelButton.Name = "DeletePersonelButton";
             this.DeletePersonelButton.Size = new System.Drawing.Size(191, 44);
             this.DeletePersonelButton.TabIndex = 85;
-            this.DeletePersonelButton.Text = "Delete Hotel";
+            this.DeletePersonelButton.Text = "Delete Personel";
             this.DeletePersonelButton.UseVisualStyleBackColor = false;
             this.DeletePersonelButton.Click += new System.EventHandler(this.DeletePersonelButton_Click);
             // 
@@ -316,7 +338,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.Label mailLbl;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.RichTextBox txtAdress;
-        private System.Windows.Forms.ListView listViewHotel;
+        private System.Windows.Forms.ListView listViewPersonel;
         private System.Windows.Forms.Label addressLbl;
         private System.Windows.Forms.Button DeletePersonelButton;
         private System.Windows.Forms.Label label4;

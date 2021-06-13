@@ -4,6 +4,7 @@ using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Enums;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
@@ -25,13 +26,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 
 
 
-
-
-
-        private void btnOtelPersoneli_Click(object sender, EventArgs e)
+        private void findPersonel_Click(object sender, EventArgs e)
         {
             SearchHotelAndFindPersonel();
         }
+
+
+
 
         private void SearchHotelAndFindPersonel()
         {
@@ -42,36 +43,38 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             }
             AccommodationPlace hotel = adminHotelCrudOperations.FindAccommodationPlace(txtHotelName.Text);
 
-            if (hotel != null)
+            if (hotel == null)
             {
-                listViewHotel.ShowItemToolTips = true;
-                foreach (var personel in hotel.Personels)
-                {
-                    ListViewItem personelItem = new ListViewItem();
-                    personelItem.Text = personel.Name;
-                    personelItem.ToolTipText = $"Phone Number :{personel.Address.PhoneNumber}, Department : {personel.Department}";
-                    personelItem.Tag = personel;
-                    listViewHotel.Items.Add(personelItem);
-                }
-
-                if (listViewHotel.Items.Count > 0)
-                {
-                    listViewHotel.Visible = true;
-                }
-                else
-                {
-                    MessageBox.Show($"{txtHotelName.Text} has no Personel. Please first add Personel to hotel");
-                }
-
-
+                MessageBox.Show("Hotel cannot find please try again");
+                return;
             }
 
+
+            panelPersonel.Visible = true;
+            listViewPersonel.ShowItemToolTips = true;
+            foreach (var personel in hotel.Personels)
+            {
+                ListViewItem personelItem = new ListViewItem();
+                personelItem.Text = personel.Name;
+                personelItem.ToolTipText = $"Phone Number :{personel.Address.PhoneNumber}, Department : {personel.Department}";
+                personelItem.Tag = personel;
+                listViewPersonel.Items.Add(personelItem);
+            }
+
+            if (listViewPersonel.Items.Count > 0)
+            {
+                listViewPersonel.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show($"{txtHotelName.Text} has no Personel. Please first add Personel to hotel");
+            }
         }
 
 
         private void listViewHotel_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            selectedPersonel = listViewHotel.SelectedItems[0];
+            selectedPersonel = listViewPersonel.SelectedItems[0];
             FillTextAccordingToSelection();
 
         }
@@ -109,6 +112,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             }
 
             MessageBox.Show("Personel is deleted.");
+            listViewPersonel.Items.Remove(selectedPersonel);
+            
             CleanAllText();
             panelPersonel.Visible = false;
 
@@ -134,13 +139,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 
 
 
-            if (!adminPersonelOperations.UpdatePersonelInfo(updatedPersonel,txtHotelName.Text))
+            if (!adminPersonelOperations.UpdatePersonelInfo(updatedPersonel, txtHotelName.Text))
             {
                 MessageBox.Show("Personel or Hotel is not found. Please try again");
                 return;
             }
 
-            MessageBox.Show("Personel is deleted.");
+            MessageBox.Show("Personel is updated.");
             CleanAllText();
             panelPersonel.Visible = false;
         }
@@ -169,27 +174,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             txtTcNo.Text = "";
             comboBoxDepartment.SelectedItem = null;
             comboBoxPosition.SelectedItem = null;
+            listViewPersonel.Items.Clear();
+            panelPersonel.Visible = false;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         #region ChechKeyPressFunction
 
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
@@ -216,7 +203,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             }
         }
 
-        
+
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -235,6 +222,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 
 
         #endregion
+
 
     }
 }
