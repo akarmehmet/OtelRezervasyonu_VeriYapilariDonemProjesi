@@ -146,6 +146,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.btnFindHotel.TabIndex = 34;
             this.btnFindHotel.Text = "Find Hotel";
             this.btnFindHotel.UseVisualStyleBackColor = true;
+            this.btnFindHotel.Click += new System.EventHandler(this.btnFindHotel_Click_1);
             // 
             // frmListbyDepartment
             // 
