@@ -131,6 +131,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.txtHotelName.Name = "txtHotelName";
             this.txtHotelName.Size = new System.Drawing.Size(163, 31);
             this.txtHotelName.TabIndex = 33;
+            this.txtHotelName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHotelName_KeyPress);
             // 
             // btnFindHotel
             // 
