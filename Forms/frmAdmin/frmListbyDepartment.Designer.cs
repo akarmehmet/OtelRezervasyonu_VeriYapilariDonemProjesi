@@ -46,7 +46,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             this.listbyDepartment.AutoSize = true;
             this.listbyDepartment.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listbyDepartment.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.listbyDepartment.Location = new System.Drawing.Point(200, 9);
+            this.listbyDepartment.Location = new System.Drawing.Point(94, 18);
             this.listbyDepartment.Name = "listbyDepartment";
             this.listbyDepartment.Size = new System.Drawing.Size(339, 41);
             this.listbyDepartment.TabIndex = 26;
@@ -117,27 +117,32 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
             // lblHotelName
             // 
             this.lblHotelName.AutoSize = true;
-            this.lblHotelName.Location = new System.Drawing.Point(62, 89);
+            this.lblHotelName.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.lblHotelName.Location = new System.Drawing.Point(146, 81);
             this.lblHotelName.Name = "lblHotelName";
-            this.lblHotelName.Size = new System.Drawing.Size(63, 13);
+            this.lblHotelName.Size = new System.Drawing.Size(118, 22);
             this.lblHotelName.TabIndex = 32;
             this.lblHotelName.Text = "Hotel Name";
             // 
             // txtHotelName
             // 
-            this.txtHotelName.Location = new System.Drawing.Point(185, 83);
+            this.txtHotelName.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtHotelName.Location = new System.Drawing.Point(270, 78);
             this.txtHotelName.Name = "txtHotelName";
-            this.txtHotelName.Size = new System.Drawing.Size(100, 20);
+            this.txtHotelName.Size = new System.Drawing.Size(163, 31);
             this.txtHotelName.TabIndex = 33;
             // 
             // btnFindHotel
             // 
-            this.btnFindHotel.Location = new System.Drawing.Point(425, 80);
+            this.btnFindHotel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnFindHotel.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnFindHotel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFindHotel.Location = new System.Drawing.Point(515, 72);
             this.btnFindHotel.Name = "btnFindHotel";
-            this.btnFindHotel.Size = new System.Drawing.Size(75, 23);
+            this.btnFindHotel.Size = new System.Drawing.Size(185, 40);
             this.btnFindHotel.TabIndex = 34;
             this.btnFindHotel.Text = "Find Hotel";
-            this.btnFindHotel.UseVisualStyleBackColor = true;
+            this.btnFindHotel.UseVisualStyleBackColor = false;
             // 
             // frmListbyDepartment
             // 
