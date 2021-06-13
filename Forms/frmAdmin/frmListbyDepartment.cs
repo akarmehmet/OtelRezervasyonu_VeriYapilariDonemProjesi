@@ -22,6 +22,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
         private IDbAdminPersonelCrudOperations adminPersonelOperations;
         private IDbAdminAccomodationPlaceCrudOperations adminHotelCrudOperations;
         private List<Personel> hotelPersonels;
+        private Position selectedPosition;
 
 
         public frmListbyDepartment()
@@ -78,9 +79,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
 
         private void listbyDepartmentBtn_Click(object sender, EventArgs e)
         {
-
+           selectedPosition =  (Position)Enum.Parse(typeof(Position), comboboxDepartment.SelectedItem.ToString(), true);
+            if(comboboxDepartment.SelectedItem == null)
+            {
+                MessageBox.Show("Please choose a Department");
+            }
         }
-        private void ListPersonelByPosition(Position position )
+        private void ListPersonelByPosition()
         {
 
         }
