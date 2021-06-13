@@ -32,6 +32,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces
 
         bool MakeCommentAndGiveScoreAccommodationPlace(string nameOfAccommodationPlace, Comment comment);
 
+        AccommodationPlace FindAccommodationPlace(string name);
+
 
 
 

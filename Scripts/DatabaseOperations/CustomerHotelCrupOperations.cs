@@ -95,5 +95,20 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations
             hotel.Data.Rating += givenComment.GivenScore;
             return true;
         }
+
+        public AccommodationPlace FindAccommodationPlace(string name)
+        {
+            try
+            {
+                return hotelData.HotelsData.Search(name).Data;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+
+
+        }
     }
 }
