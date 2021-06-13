@@ -130,7 +130,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
             }
 
             if (!isHotelAdded)
-                nodes.Append(hotel);
+                nodes.Add(hotel);
         }
 
 
