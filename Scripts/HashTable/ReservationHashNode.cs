@@ -23,9 +23,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable
 
             ReservationHeapTrees = new ReservationHeap(maxNumber);
 
-            Reservation reservation = (Reservation)Convert.ChangeType(value, typeof(Reservation));
+            
 
-            foreach (var customer in reservation.Customers)
+            foreach (var customer in value.Customers)
             {
 
                 ReservationHeapTrees.Insert(new HeapNode<Customer, string>(customer, customer.Name));

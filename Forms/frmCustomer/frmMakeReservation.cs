@@ -65,7 +65,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private void addPersonBtn_Click(object sender, EventArgs e)
         {
 
-            if(hotelReservation.Customers.Count >= Convert.ToInt32(txtNumberOfPerson))
+            if(hotelReservation.Customers.Count >= Convert.ToInt32(txtNumberOfPerson.Text))
             {
                 MessageBox.Show("You Can not more custmers to this reservation");
                 return;
@@ -96,8 +96,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             };
 
             hotelReservation.Customers.Add(hotelCustomer);
+            lblTotalPrice.Text = GetReservationTotalPrice().ToString();
 
-            if (hotelReservation.Customers.Count == Convert.ToInt32(txtNumberOfPerson))
+            if (hotelReservation.Customers.Count == Convert.ToInt32(txtNumberOfPerson.Text))
             {
                 hotelReservation.ReservedPlaceName = txtHotelName.Text;
                 hotelReservation.ReservedPlaceNo = Convert.ToInt32(comboBoxRoomNo.SelectedItem.ToString());
@@ -131,7 +132,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
                 txtNumberOfPerson.Text == "" ||
                 txtPhone.Text == "" ||
                 txtTcNo.Text == "" ||
-                txtTotalPrice.Text == "" ||
                 txtNumberOfDays.Text == "" ||
                 txtReservationNo.Text == "" ||
                 comboBoxRoomNo.SelectedItem == null)
@@ -144,7 +144,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 
         private void btnMakeReservation_Click(object sender, EventArgs e)
         {
-
+            customerHotelCrudOperations.MakeReservation(hotelReservation);
         }
 
 
