@@ -33,11 +33,16 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.findPersonel = new System.Windows.Forms.Button();
             this.lblHotelName = new System.Windows.Forms.Label();
             this.txtHotelName = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelCustomerInfo = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.addPersonBtn = new System.Windows.Forms.Button();
+            this.totalPriceTxtBx = new System.Windows.Forms.TextBox();
             this.mailLbl = new System.Windows.Forms.Label();
-            this.txtMail = new System.Windows.Forms.TextBox();
             this.txtAdress = new System.Windows.Forms.RichTextBox();
             this.addressLbl = new System.Windows.Forms.Label();
+            this.txtMail = new System.Windows.Forms.TextBox();
+            this.totalPriceLbl = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
@@ -48,18 +53,15 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.rezervationsLbl = new System.Windows.Forms.Label();
             this.roomLbl = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numberofPersonsTxtBx = new System.Windows.Forms.TextBox();
+            this.txtNumberOfPerson = new System.Windows.Forms.TextBox();
             this.NumberofPersonsLbl = new System.Windows.Forms.Label();
             this.numberofDaysTxtBx = new System.Windows.Forms.TextBox();
             this.numberofDaysLbl = new System.Windows.Forms.Label();
-            this.totalPriceTxtBx = new System.Windows.Forms.TextBox();
-            this.totalPriceLbl = new System.Windows.Forms.Label();
-            this.addPersonBtn = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelReservationInfo = new System.Windows.Forms.Panel();
+            this.lblNumberOfPerson = new System.Windows.Forms.Label();
+            this.lblEnteredNumberOfPerson = new System.Windows.Forms.Label();
+            this.panelCustomerInfo.SuspendLayout();
+            this.panelReservationInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // rezervationLbl
@@ -84,6 +86,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.findPersonel.TabIndex = 87;
             this.findPersonel.Text = "Find Hotel";
             this.findPersonel.UseVisualStyleBackColor = false;
+            this.findPersonel.Click += new System.EventHandler(this.findPersonel_Click);
             // 
             // lblHotelName
             // 
@@ -103,27 +106,70 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.txtHotelName.Size = new System.Drawing.Size(186, 31);
             this.txtHotelName.TabIndex = 85;
             // 
-            // panel1
+            // panelCustomerInfo
             // 
-            this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.addPersonBtn);
-            this.panel1.Controls.Add(this.totalPriceTxtBx);
-            this.panel1.Controls.Add(this.mailLbl);
-            this.panel1.Controls.Add(this.txtAdress);
-            this.panel1.Controls.Add(this.addressLbl);
-            this.panel1.Controls.Add(this.txtMail);
-            this.panel1.Controls.Add(this.totalPriceLbl);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtTcNo);
-            this.panel1.Controls.Add(this.txtPhone);
-            this.panel1.Controls.Add(this.nameLbl);
-            this.panel1.Controls.Add(this.phoneLbl);
-            this.panel1.Controls.Add(this.txtName);
-            this.panel1.Location = new System.Drawing.Point(12, 315);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(815, 314);
-            this.panel1.TabIndex = 88;
+            this.panelCustomerInfo.Controls.Add(this.lblEnteredNumberOfPerson);
+            this.panelCustomerInfo.Controls.Add(this.lblNumberOfPerson);
+            this.panelCustomerInfo.Controls.Add(this.richTextBox1);
+            this.panelCustomerInfo.Controls.Add(this.label1);
+            this.panelCustomerInfo.Controls.Add(this.addPersonBtn);
+            this.panelCustomerInfo.Controls.Add(this.totalPriceTxtBx);
+            this.panelCustomerInfo.Controls.Add(this.mailLbl);
+            this.panelCustomerInfo.Controls.Add(this.txtAdress);
+            this.panelCustomerInfo.Controls.Add(this.addressLbl);
+            this.panelCustomerInfo.Controls.Add(this.txtMail);
+            this.panelCustomerInfo.Controls.Add(this.totalPriceLbl);
+            this.panelCustomerInfo.Controls.Add(this.label4);
+            this.panelCustomerInfo.Controls.Add(this.txtTcNo);
+            this.panelCustomerInfo.Controls.Add(this.txtPhone);
+            this.panelCustomerInfo.Controls.Add(this.nameLbl);
+            this.panelCustomerInfo.Controls.Add(this.phoneLbl);
+            this.panelCustomerInfo.Controls.Add(this.txtName);
+            this.panelCustomerInfo.Location = new System.Drawing.Point(12, 302);
+            this.panelCustomerInfo.Name = "panelCustomerInfo";
+            this.panelCustomerInfo.Size = new System.Drawing.Size(815, 327);
+            this.panelCustomerInfo.TabIndex = 88;
+            this.panelCustomerInfo.Visible = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.richTextBox1.Location = new System.Drawing.Point(163, 89);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(186, 116);
+            this.richTextBox1.TabIndex = 118;
+            this.richTextBox1.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.label1.Location = new System.Drawing.Point(69, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 22);
+            this.label1.TabIndex = 117;
+            this.label1.Text = "Address:";
+            // 
+            // addPersonBtn
+            // 
+            this.addPersonBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.addPersonBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.addPersonBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addPersonBtn.Location = new System.Drawing.Point(525, 273);
+            this.addPersonBtn.Name = "addPersonBtn";
+            this.addPersonBtn.Size = new System.Drawing.Size(257, 45);
+            this.addPersonBtn.TabIndex = 89;
+            this.addPersonBtn.Text = "Add Person";
+            this.addPersonBtn.UseVisualStyleBackColor = false;
+            // 
+            // totalPriceTxtBx
+            // 
+            this.totalPriceTxtBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.totalPriceTxtBx.Location = new System.Drawing.Point(339, 222);
+            this.totalPriceTxtBx.Name = "totalPriceTxtBx";
+            this.totalPriceTxtBx.ReadOnly = true;
+            this.totalPriceTxtBx.Size = new System.Drawing.Size(186, 31);
+            this.totalPriceTxtBx.TabIndex = 115;
             // 
             // mailLbl
             // 
@@ -134,14 +180,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.mailLbl.Size = new System.Drawing.Size(51, 22);
             this.mailLbl.TabIndex = 105;
             this.mailLbl.Text = "Mail:";
-            // 
-            // txtMail
-            // 
-            this.txtMail.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtMail.Location = new System.Drawing.Point(505, 55);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(186, 31);
-            this.txtMail.TabIndex = 104;
             // 
             // txtAdress
             // 
@@ -161,6 +199,24 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.addressLbl.Size = new System.Drawing.Size(88, 22);
             this.addressLbl.TabIndex = 102;
             this.addressLbl.Text = "Address:";
+            // 
+            // txtMail
+            // 
+            this.txtMail.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtMail.Location = new System.Drawing.Point(505, 55);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(186, 31);
+            this.txtMail.TabIndex = 104;
+            // 
+            // totalPriceLbl
+            // 
+            this.totalPriceLbl.AutoSize = true;
+            this.totalPriceLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.totalPriceLbl.Location = new System.Drawing.Point(226, 225);
+            this.totalPriceLbl.Name = "totalPriceLbl";
+            this.totalPriceLbl.Size = new System.Drawing.Size(107, 22);
+            this.totalPriceLbl.TabIndex = 116;
+            this.totalPriceLbl.Text = "Total Price:";
             // 
             // label4
             // 
@@ -255,14 +311,14 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.comboBox1.Size = new System.Drawing.Size(186, 30);
             this.comboBox1.TabIndex = 110;
             // 
-            // numberofPersonsTxtBx
+            // txtNumberOfPerson
             // 
-            this.numberofPersonsTxtBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.numberofPersonsTxtBx.Location = new System.Drawing.Point(505, 58);
-            this.numberofPersonsTxtBx.Name = "numberofPersonsTxtBx";
-            this.numberofPersonsTxtBx.Size = new System.Drawing.Size(186, 31);
-            this.numberofPersonsTxtBx.TabIndex = 111;
-            this.numberofPersonsTxtBx.TextChanged += new System.EventHandler(this.numberofPersonsTxtBx_TextChanged);
+            this.txtNumberOfPerson.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtNumberOfPerson.Location = new System.Drawing.Point(505, 58);
+            this.txtNumberOfPerson.Name = "txtNumberOfPerson";
+            this.txtNumberOfPerson.Size = new System.Drawing.Size(186, 31);
+            this.txtNumberOfPerson.TabIndex = 111;
+            this.txtNumberOfPerson.TextChanged += new System.EventHandler(this.numberofPersonsTxtBx_TextChanged);
             // 
             // NumberofPersonsLbl
             // 
@@ -293,70 +349,38 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.numberofDaysLbl.TabIndex = 114;
             this.numberofDaysLbl.Text = "Number of \r\n    Days:";
             // 
-            // totalPriceTxtBx
+            // panelReservationInfo
             // 
-            this.totalPriceTxtBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.totalPriceTxtBx.Location = new System.Drawing.Point(339, 222);
-            this.totalPriceTxtBx.Name = "totalPriceTxtBx";
-            this.totalPriceTxtBx.ReadOnly = true;
-            this.totalPriceTxtBx.Size = new System.Drawing.Size(186, 31);
-            this.totalPriceTxtBx.TabIndex = 115;
+            this.panelReservationInfo.Controls.Add(this.rezervationTxtBx);
+            this.panelReservationInfo.Controls.Add(this.roomLbl);
+            this.panelReservationInfo.Controls.Add(this.comboBox1);
+            this.panelReservationInfo.Controls.Add(this.numberofDaysLbl);
+            this.panelReservationInfo.Controls.Add(this.numberofDaysTxtBx);
+            this.panelReservationInfo.Controls.Add(this.txtNumberOfPerson);
+            this.panelReservationInfo.Controls.Add(this.NumberofPersonsLbl);
+            this.panelReservationInfo.Controls.Add(this.rezervationsLbl);
+            this.panelReservationInfo.Location = new System.Drawing.Point(12, 140);
+            this.panelReservationInfo.Name = "panelReservationInfo";
+            this.panelReservationInfo.Size = new System.Drawing.Size(815, 156);
+            this.panelReservationInfo.TabIndex = 115;
+            this.panelReservationInfo.Visible = false;
             // 
-            // totalPriceLbl
+            // lblNumberOfPerson
             // 
-            this.totalPriceLbl.AutoSize = true;
-            this.totalPriceLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.totalPriceLbl.Location = new System.Drawing.Point(226, 225);
-            this.totalPriceLbl.Name = "totalPriceLbl";
-            this.totalPriceLbl.Size = new System.Drawing.Size(107, 22);
-            this.totalPriceLbl.TabIndex = 116;
-            this.totalPriceLbl.Text = "Total Price:";
+            this.lblNumberOfPerson.AutoSize = true;
+            this.lblNumberOfPerson.Location = new System.Drawing.Point(39, 285);
+            this.lblNumberOfPerson.Name = "lblNumberOfPerson";
+            this.lblNumberOfPerson.Size = new System.Drawing.Size(99, 13);
+            this.lblNumberOfPerson.TabIndex = 119;
+            this.lblNumberOfPerson.Text = "Number Of Persons";
             // 
-            // addPersonBtn
+            // lblEnteredNumberOfPerson
             // 
-            this.addPersonBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.addPersonBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.addPersonBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addPersonBtn.Location = new System.Drawing.Point(161, 263);
-            this.addPersonBtn.Name = "addPersonBtn";
-            this.addPersonBtn.Size = new System.Drawing.Size(530, 45);
-            this.addPersonBtn.TabIndex = 89;
-            this.addPersonBtn.Text = "Add Person";
-            this.addPersonBtn.UseVisualStyleBackColor = false;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.richTextBox1.Location = new System.Drawing.Point(163, 89);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(186, 116);
-            this.richTextBox1.TabIndex = 118;
-            this.richTextBox1.Text = "";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.label1.Location = new System.Drawing.Point(69, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 22);
-            this.label1.TabIndex = 117;
-            this.label1.Text = "Address:";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.rezervationTxtBx);
-            this.panel2.Controls.Add(this.roomLbl);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.numberofDaysLbl);
-            this.panel2.Controls.Add(this.numberofDaysTxtBx);
-            this.panel2.Controls.Add(this.numberofPersonsTxtBx);
-            this.panel2.Controls.Add(this.NumberofPersonsLbl);
-            this.panel2.Controls.Add(this.rezervationsLbl);
-            this.panel2.Location = new System.Drawing.Point(12, 140);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(815, 156);
-            this.panel2.TabIndex = 115;
+            this.lblEnteredNumberOfPerson.AutoSize = true;
+            this.lblEnteredNumberOfPerson.Location = new System.Drawing.Point(155, 285);
+            this.lblEnteredNumberOfPerson.Name = "lblEnteredNumberOfPerson";
+            this.lblEnteredNumberOfPerson.Size = new System.Drawing.Size(0, 13);
+            this.lblEnteredNumberOfPerson.TabIndex = 119;
             // 
             // frmMakeReservation
             // 
@@ -364,8 +388,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(839, 632);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelReservationInfo);
+            this.Controls.Add(this.panelCustomerInfo);
             this.Controls.Add(this.findPersonel);
             this.Controls.Add(this.lblHotelName);
             this.Controls.Add(this.txtHotelName);
@@ -374,10 +398,10 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.Name = "frmMakeReservation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Make Reservation";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panelCustomerInfo.ResumeLayout(false);
+            this.panelCustomerInfo.PerformLayout();
+            this.panelReservationInfo.ResumeLayout(false);
+            this.panelReservationInfo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -389,7 +413,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.Button findPersonel;
         private System.Windows.Forms.Label lblHotelName;
         private System.Windows.Forms.TextBox txtHotelName;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelCustomerInfo;
         private System.Windows.Forms.Button addPersonBtn;
         private System.Windows.Forms.TextBox totalPriceTxtBx;
         private System.Windows.Forms.Label mailLbl;
@@ -401,7 +425,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.Label numberofDaysLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTcNo;
-        private System.Windows.Forms.TextBox numberofPersonsTxtBx;
+        private System.Windows.Forms.TextBox txtNumberOfPerson;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label nameLbl;
         private System.Windows.Forms.Label NumberofPersonsLbl;
@@ -413,6 +437,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.Label roomLbl;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelReservationInfo;
+        private System.Windows.Forms.Label lblEnteredNumberOfPerson;
+        private System.Windows.Forms.Label lblNumberOfPerson;
     }
 }
