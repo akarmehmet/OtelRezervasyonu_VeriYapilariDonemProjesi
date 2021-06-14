@@ -94,6 +94,8 @@
     <Compile Include="Forms\frmCustomer\frmRezNameSurnameAZ.Designer.cs">
       <DependentUpon>frmRezNameSurnameAZ.cs</DependentUpon>
     </Compile>
+    <Compile Include="Scripts\ConcreteClass\HotelCustomer.cs" />
+    <Compile Include="Scripts\ConcreteClass\HotelReservation.cs" />
     <Compile Include="Scripts\FactoryClasses\AccommodationFactory.cs" />
     <Compile Include="Forms\frmAdmin\frmAddRoomtoHotel.cs">
       <SubType>Form</SubType>

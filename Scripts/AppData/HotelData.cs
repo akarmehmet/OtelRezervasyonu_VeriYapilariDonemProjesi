@@ -15,7 +15,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.AppData
         public HotelTrees HotelsData { get; set; }
 
         public HashLinearTable<Reservation> ReservationHashTable {get; set;}
-        public List<HeapTrees<Reservation, int>> ReservationsHeap {get; set;}
+        public List<HeapTrees<Customer, string>> ReservationCustomersHeap {get; set;}
 
         private GetDummyHotels getDummyHotels;
 
@@ -28,8 +28,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.AppData
             if (ReservationHashTable == null)
                 ReservationHashTable = new ReservationHashTable();
 
-            if (ReservationsHeap == null)
-                ReservationsHeap = new List<HeapTrees<Reservation, int>>();
+            if (ReservationCustomersHeap == null)
+                ReservationCustomersHeap = new List<HeapTrees<Customer, string>>();
 
             if(getDummyHotels == null)
             {

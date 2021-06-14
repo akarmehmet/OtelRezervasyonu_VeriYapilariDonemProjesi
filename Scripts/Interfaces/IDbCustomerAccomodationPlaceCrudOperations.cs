@@ -27,7 +27,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces
         
         int GetAccommodationPlacesCount();
 
-        bool MakeReservation(string nameOfAccommodationPlace);
+        void MakeReservation(Reservation reservation);
 
 
         bool MakeCommentAndGiveScoreAccommodationPlace(string nameOfAccommodationPlace, Comment comment);

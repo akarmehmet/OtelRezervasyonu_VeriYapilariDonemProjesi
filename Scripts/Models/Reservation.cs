@@ -9,7 +9,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models
         public int ReservationNo { get; set; }
         public string ReservedPlaceName { get; set; }
         public int ReservedPlaceNo { get; set; }
-        public int NumberOfReservedPlace { get; set; }
         public int NumberOfDay { get; set; }
         public float TotalPrice { get; set; }
 

@@ -1,5 +1,6 @@
 ﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.AppData;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.BST;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Heap;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
 using System;
@@ -65,9 +66,20 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations
         }
 
 
-        public bool MakeReservation(string nameOfAccommodationPlace)
+        public void MakeReservation(Reservation reservation)
         {
-            throw new NotImplementedException();
+            hotelData.ReservationHashTable.AddNode(new HashTable.HashLinearNode<Reservation>(reservation.ReservationNo, reservation));
+
+            HeapTrees<Customer, string> reservationTress = new HeapTrees<Customer, string>(reservation.Customers.Count);
+
+            foreach (var customer in reservation.Customers)
+            {
+                HeapNode<Customer, string> heapNode = new HeapNode<Customer, string>(customer,customer.Name);
+                reservationTress.Insert(heapNode);
+            }
+
+            hotelData.ReservationCustomersHeap.Add(reservationTress);
+            
         }
 
         public bool MakeCommentAndGiveScoreAccommodationPlace(string nameOfAccommodationPlace, Comment givenComment)
