@@ -35,7 +35,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable
             table[hash] = new HashLinearNode<T>(node.Key, node.Value);
         }
 
-        public T GetNode(int key)
+        public HashLinearNode<T> GetNode(int key)
         {
             int hash = (key % TABLE_SIZE);
 
@@ -50,7 +50,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable
             }
 
             if (table[hash].Key == key)
-                return table[hash].Value;
+                return table[hash];
             else
                 return default;
 

@@ -76,6 +76,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.btnFindReservation.TabIndex = 111;
             this.btnFindReservation.Text = "List";
             this.btnFindReservation.UseVisualStyleBackColor = false;
+            this.btnFindReservation.Click += new System.EventHandler(this.btnFindReservation_Click);
             // 
             // listViewPersonel
             // 

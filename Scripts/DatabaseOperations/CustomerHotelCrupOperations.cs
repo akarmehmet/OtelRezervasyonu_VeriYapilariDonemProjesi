@@ -126,9 +126,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations
 
         }
 
-        public Reservation GetReservation(int reservationNo)
+        public ReservationHashNode GetReservation(int reservationNo)
         {
-           return hotelData.ReservationHashTable.GetNode(reservationNo);
+           return (ReservationHashNode)hotelData.ReservationHashTable.GetNode(reservationNo);
         }
     }
 }

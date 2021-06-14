@@ -1,4 +1,5 @@
-﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
+﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +35,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces
 
         AccommodationPlace FindAccommodationPlace(string name);
 
-        Reservation GetReservation(int reservationNo);
+        ReservationHashNode GetReservation(int reservationNo);
 
 
 
