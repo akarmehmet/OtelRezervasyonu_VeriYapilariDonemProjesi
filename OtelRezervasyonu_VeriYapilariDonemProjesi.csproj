@@ -52,6 +52,12 @@
     <Compile Include="Forms\frmAdmin\frmListbyDepartment.Designer.cs">
       <DependentUpon>frmListbyDepartment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmCustomer\BinarySearchTreeofHotels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomer\BinarySearchTreeofHotels.Designer.cs">
+      <DependentUpon>BinarySearchTreeofHotels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmCustomer\frmHotelScoreSelectedCityDistrict.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAdmin\frmPersonnelUpdateDelete.resx">
       <DependentUpon>frmPersonnelUpdateDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomer\BinarySearchTreeofHotels.resx">
+      <DependentUpon>BinarySearchTreeofHotels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCustomer\frmHotelScoreSelectedCityDistrict.resx">
       <DependentUpon>frmHotelScoreSelectedCityDistrict.cs</DependentUpon>
