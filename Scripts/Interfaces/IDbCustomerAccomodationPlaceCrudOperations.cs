@@ -34,6 +34,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces
 
         AccommodationPlace FindAccommodationPlace(string name);
 
+        Reservation GetReservation(int reservationNo);
+
 
 
 

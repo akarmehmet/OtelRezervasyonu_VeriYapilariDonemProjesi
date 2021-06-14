@@ -1,5 +1,6 @@
 ﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.AppData;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.BST;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Heap;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Interfaces;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
@@ -68,19 +69,21 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations
 
         public void MakeReservation(Reservation reservation)
         {
-            hotelData.ReservationHashTable.AddNode(new HashTable.HashLinearNode<Reservation>(reservation.ReservationNo, reservation));
+            hotelData.ReservationHashTable.AddNode(new ReservationHashNode(reservation.ReservationNo, reservation,reservation.Customers.Count));
 
-            HeapTrees<Customer, string> reservationTress = new HeapTrees<Customer, string>(reservation.Customers.Count);
+            //HeapTrees<Customer, string> reservationTress = new HeapTrees<Customer, string>(reservation.Customers.Count);
 
-            foreach (var customer in reservation.Customers)
-            {
-                HeapNode<Customer, string> heapNode = new HeapNode<Customer, string>(customer,customer.Name);
-                reservationTress.Insert(heapNode);
-            }
+            //foreach (var customer in reservation.Customers)
+            //{
+            //    HeapNode<Customer, string> heapNode = new HeapNode<Customer, string>(customer,customer.Name);
+            //    reservationTress.Insert(heapNode);
+            //}
 
-            hotelData.ReservationCustomersHeap.Add(reservationTress);
+            //hotelData.ReservationCustomersHeap.Add(reservationTress);
             
         }
+
+        
 
         public bool MakeCommentAndGiveScoreAccommodationPlace(string nameOfAccommodationPlace, Comment givenComment)
         {
@@ -121,6 +124,11 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations
             }
 
 
+        }
+
+        public Reservation GetReservation(int reservationNo)
+        {
+           return hotelData.ReservationHashTable.GetNode(reservationNo);
         }
     }
 }

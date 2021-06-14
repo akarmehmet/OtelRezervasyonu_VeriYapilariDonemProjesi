@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Heap;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
+using System;
 
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable
 {
@@ -11,7 +10,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable
         private int key;
         private T value;
 
-
+       
 
 
 

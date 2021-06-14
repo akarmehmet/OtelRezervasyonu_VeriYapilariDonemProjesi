@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
 {
-    public class ReservationHeap : HeapTrees<Reservation, int>
+    public class ReservationHeap : HeapTrees<Customer, string>
     {
         public ReservationHeap(int maxHeapSize) : base(maxHeapSize)
         {

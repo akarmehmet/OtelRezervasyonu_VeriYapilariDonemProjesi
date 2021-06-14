@@ -155,6 +155,7 @@
     <Compile Include="Scripts\ConcreteClass\HotelCommet.cs" />
     <Compile Include="Scripts\ConcreteClass\HotelPersonel.cs" />
     <Compile Include="Scripts\ConcreteClass\PersonelAdress.cs" />
+    <Compile Include="Scripts\HashTable\ReservationHashNode.cs" />
     <Compile Include="Scripts\HashTable\ReservationHashTable.cs" />
     <Compile Include="Scripts\Heap\ReservationHeap.cs" />
     <Compile Include="Scripts\DatabaseOperations\AdminHotelCrudOperations.cs" />

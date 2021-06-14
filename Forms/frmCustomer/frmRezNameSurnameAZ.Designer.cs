@@ -29,20 +29,20 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         /// </summary>
         private void InitializeComponent()
         {
-            this.rezervationTxtBx = new System.Windows.Forms.TextBox();
+            this.txtReservationNo = new System.Windows.Forms.TextBox();
             this.rezervationsLbl = new System.Windows.Forms.Label();
             this.AZNameSurnameLbl = new System.Windows.Forms.Label();
-            this.findPersonel = new System.Windows.Forms.Button();
+            this.btnFindReservation = new System.Windows.Forms.Button();
             this.listViewPersonel = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // rezervationTxtBx
+            // txtReservationNo
             // 
-            this.rezervationTxtBx.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.rezervationTxtBx.Location = new System.Drawing.Point(211, 130);
-            this.rezervationTxtBx.Name = "rezervationTxtBx";
-            this.rezervationTxtBx.Size = new System.Drawing.Size(186, 31);
-            this.rezervationTxtBx.TabIndex = 108;
+            this.txtReservationNo.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtReservationNo.Location = new System.Drawing.Point(211, 130);
+            this.txtReservationNo.Name = "txtReservationNo";
+            this.txtReservationNo.Size = new System.Drawing.Size(186, 31);
+            this.txtReservationNo.TabIndex = 108;
             // 
             // rezervationsLbl
             // 
@@ -65,17 +65,17 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.AZNameSurnameLbl.TabIndex = 110;
             this.AZNameSurnameLbl.Text = "AZ of Reservation Names and Surnames:";
             // 
-            // findPersonel
+            // btnFindReservation
             // 
-            this.findPersonel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.findPersonel.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.findPersonel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.findPersonel.Location = new System.Drawing.Point(473, 122);
-            this.findPersonel.Name = "findPersonel";
-            this.findPersonel.Size = new System.Drawing.Size(232, 44);
-            this.findPersonel.TabIndex = 111;
-            this.findPersonel.Text = "List";
-            this.findPersonel.UseVisualStyleBackColor = false;
+            this.btnFindReservation.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnFindReservation.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnFindReservation.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFindReservation.Location = new System.Drawing.Point(473, 122);
+            this.btnFindReservation.Name = "btnFindReservation";
+            this.btnFindReservation.Size = new System.Drawing.Size(232, 44);
+            this.btnFindReservation.TabIndex = 111;
+            this.btnFindReservation.Text = "List";
+            this.btnFindReservation.UseVisualStyleBackColor = false;
             // 
             // listViewPersonel
             // 
@@ -93,9 +93,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(839, 641);
             this.Controls.Add(this.listViewPersonel);
-            this.Controls.Add(this.findPersonel);
+            this.Controls.Add(this.btnFindReservation);
             this.Controls.Add(this.AZNameSurnameLbl);
-            this.Controls.Add(this.rezervationTxtBx);
+            this.Controls.Add(this.txtReservationNo);
             this.Controls.Add(this.rezervationsLbl);
             this.Location = new System.Drawing.Point(294, 54);
             this.Name = "frmRezNameSurnameAZ";
@@ -108,10 +108,10 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 
         #endregion
 
-        private System.Windows.Forms.TextBox rezervationTxtBx;
+        private System.Windows.Forms.TextBox txtReservationNo;
         private System.Windows.Forms.Label rezervationsLbl;
         private System.Windows.Forms.Label AZNameSurnameLbl;
-        private System.Windows.Forms.Button findPersonel;
+        private System.Windows.Forms.Button btnFindReservation;
         private System.Windows.Forms.ListView listViewPersonel;
     }
 }

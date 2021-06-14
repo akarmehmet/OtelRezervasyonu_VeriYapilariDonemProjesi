@@ -1,4 +1,5 @@
 ﻿using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable;
+using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Heap;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
 {
     public class ReservationHashTable : HashLinearTable<Reservation>
     {
-
-
+       
     }
 }
