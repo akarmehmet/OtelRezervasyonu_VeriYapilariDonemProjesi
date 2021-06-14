@@ -158,6 +158,20 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             }
         }
 
+        private void scoreInSelectedCityDistrictToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Count() == 0)
+            {
+                frmHotelScoreSelectedCityDistrict frmHotelScoreSelectedCityDistrict = new frmHotelScoreSelectedCityDistrict();
+                frmHotelScoreSelectedCityDistrict.MdiParent = this;
+                frmHotelScoreSelectedCityDistrict.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
         private void adminTopMDIPanel_MouseDown(object sender, MouseEventArgs e)
         {
             take = true;

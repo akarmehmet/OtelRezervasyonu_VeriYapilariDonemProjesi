@@ -113,7 +113,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
             }
 
             if (!isHotelAdded)
-                nodes.Append(hotel);
+                nodes.Add(hotel);
         }
 
         private void AddByStar(AccommodationPlace hotel)

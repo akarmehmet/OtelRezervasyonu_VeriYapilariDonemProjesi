@@ -32,8 +32,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.districtLbl = new System.Windows.Forms.Label();
             this.txtDistrict = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
-            this.btnhotelScoreSelected = new System.Windows.Forms.Button();
-            this.listViewhotelScoreSelected = new System.Windows.Forms.ListView();
+            this.btnListHotel = new System.Windows.Forms.Button();
+            this.listViewHotel = new System.Windows.Forms.ListView();
             this.CityNameLbl = new System.Windows.Forms.Label();
             this.hotelScoreSelectedLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -64,26 +64,27 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.txtCity.Size = new System.Drawing.Size(213, 31);
             this.txtCity.TabIndex = 54;
             // 
-            // btnhotelScoreSelected
+            // btnListHotel
             // 
-            this.btnhotelScoreSelected.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnhotelScoreSelected.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.btnhotelScoreSelected.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnhotelScoreSelected.Location = new System.Drawing.Point(87, 199);
-            this.btnhotelScoreSelected.Name = "btnhotelScoreSelected";
-            this.btnhotelScoreSelected.Size = new System.Drawing.Size(672, 62);
-            this.btnhotelScoreSelected.TabIndex = 53;
-            this.btnhotelScoreSelected.Text = "List by Hotel Score";
-            this.btnhotelScoreSelected.UseVisualStyleBackColor = false;
+            this.btnListHotel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnListHotel.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnListHotel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnListHotel.Location = new System.Drawing.Point(87, 199);
+            this.btnListHotel.Name = "btnListHotel";
+            this.btnListHotel.Size = new System.Drawing.Size(672, 62);
+            this.btnListHotel.TabIndex = 53;
+            this.btnListHotel.Text = "List by Hotel Score";
+            this.btnListHotel.UseVisualStyleBackColor = false;
+            this.btnListHotel.Click += new System.EventHandler(this.btnListHotel_Click);
             // 
-            // listViewhotelScoreSelected
+            // listViewHotel
             // 
-            this.listViewhotelScoreSelected.HideSelection = false;
-            this.listViewhotelScoreSelected.Location = new System.Drawing.Point(34, 285);
-            this.listViewhotelScoreSelected.Name = "listViewhotelScoreSelected";
-            this.listViewhotelScoreSelected.Size = new System.Drawing.Size(770, 330);
-            this.listViewhotelScoreSelected.TabIndex = 52;
-            this.listViewhotelScoreSelected.UseCompatibleStateImageBehavior = false;
+            this.listViewHotel.HideSelection = false;
+            this.listViewHotel.Location = new System.Drawing.Point(34, 285);
+            this.listViewHotel.Name = "listViewHotel";
+            this.listViewHotel.Size = new System.Drawing.Size(770, 330);
+            this.listViewHotel.TabIndex = 52;
+            this.listViewHotel.UseCompatibleStateImageBehavior = false;
             // 
             // CityNameLbl
             // 
@@ -116,8 +117,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.Controls.Add(this.districtLbl);
             this.Controls.Add(this.txtDistrict);
             this.Controls.Add(this.txtCity);
-            this.Controls.Add(this.btnhotelScoreSelected);
-            this.Controls.Add(this.listViewhotelScoreSelected);
+            this.Controls.Add(this.btnListHotel);
+            this.Controls.Add(this.listViewHotel);
             this.Controls.Add(this.CityNameLbl);
             this.Controls.Add(this.hotelScoreSelectedLbl);
             this.Location = new System.Drawing.Point(294, 54);
@@ -134,8 +135,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.Label districtLbl;
         private System.Windows.Forms.TextBox txtDistrict;
         private System.Windows.Forms.TextBox txtCity;
-        private System.Windows.Forms.Button btnhotelScoreSelected;
-        private System.Windows.Forms.ListView listViewhotelScoreSelected;
+        private System.Windows.Forms.Button btnListHotel;
+        private System.Windows.Forms.ListView listViewHotel;
         private System.Windows.Forms.Label CityNameLbl;
         private System.Windows.Forms.Label hotelScoreSelectedLbl;
     }

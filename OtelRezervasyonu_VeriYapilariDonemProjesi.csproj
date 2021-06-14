@@ -153,13 +153,12 @@
     <Compile Include="Scripts\ConcreteClass\HotelCommet.cs" />
     <Compile Include="Scripts\ConcreteClass\HotelPersonel.cs" />
     <Compile Include="Scripts\ConcreteClass\PersonelAdress.cs" />
-    <Compile Include="Scripts\ConcreteClass\PersonelHeap.cs" />
-    <Compile Include="Scripts\ConcreteClass\ReservationHashTable.cs" />
-    <Compile Include="Scripts\ConcreteClass\ReservationHeap.cs" />
+    <Compile Include="Scripts\HashTable\ReservationHashTable.cs" />
+    <Compile Include="Scripts\Heap\ReservationHeap.cs" />
     <Compile Include="Scripts\DatabaseOperations\AdminHotelCrudOperations.cs" />
     <Compile Include="Scripts\ConcreteClass\Hotel.cs" />
     <Compile Include="Scripts\ConcreteClass\HotelRoom.cs" />
-    <Compile Include="Scripts\ConcreteClass\HotelTrees.cs" />
+    <Compile Include="Scripts\BST\HotelTrees.cs" />
     <Compile Include="Scripts\DatabaseOperations\AdminHotelPersonelCrupOperations.cs" />
     <Compile Include="Scripts\DatabaseOperations\CustomerHotelCrupOperations.cs" />
     <Compile Include="Scripts\Enums\Enum.cs" />

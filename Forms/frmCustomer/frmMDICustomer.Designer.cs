@@ -121,7 +121,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem,
             this.scoreInSelectedCityDistrictToolStripMenuItem});
             this.newHotelCreateToolStripMenuItem.Name = "newHotelCreateToolStripMenuItem";
-            this.newHotelCreateToolStripMenuItem.Size = new System.Drawing.Size(445, 26);
+            this.newHotelCreateToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
             this.newHotelCreateToolStripMenuItem.Text = "List By";
             // 
             // hotelToolStripMenuItem
@@ -150,24 +150,25 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.scoreInSelectedCityDistrictToolStripMenuItem.Name = "scoreInSelectedCityDistrictToolStripMenuItem";
             this.scoreInSelectedCityDistrictToolStripMenuItem.Size = new System.Drawing.Size(440, 26);
             this.scoreInSelectedCityDistrictToolStripMenuItem.Text = "Hotel Score in Selected City - District";
+            this.scoreInSelectedCityDistrictToolStripMenuItem.Click += new System.EventHandler(this.scoreInSelectedCityDistrictToolStripMenuItem_Click);
             // 
             // hotelInfoUpdateDeleteToolStripMenuItem
             // 
             this.hotelInfoUpdateDeleteToolStripMenuItem.Name = "hotelInfoUpdateDeleteToolStripMenuItem";
-            this.hotelInfoUpdateDeleteToolStripMenuItem.Size = new System.Drawing.Size(445, 26);
+            this.hotelInfoUpdateDeleteToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
             this.hotelInfoUpdateDeleteToolStripMenuItem.Text = "Hotel Comment";
             this.hotelInfoUpdateDeleteToolStripMenuItem.Click += new System.EventHandler(this.hotelInfoUpdateDeleteToolStripMenuItem_Click);
             // 
             // addRoomToHotelToolStripMenuItem
             // 
             this.addRoomToHotelToolStripMenuItem.Name = "addRoomToHotelToolStripMenuItem";
-            this.addRoomToHotelToolStripMenuItem.Size = new System.Drawing.Size(445, 26);
+            this.addRoomToHotelToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
             this.addRoomToHotelToolStripMenuItem.Text = "Add Room to Hotel";
             // 
             // makeReservationToolStripMenuItem
             // 
             this.makeReservationToolStripMenuItem.Name = "makeReservationToolStripMenuItem";
-            this.makeReservationToolStripMenuItem.Size = new System.Drawing.Size(445, 26);
+            this.makeReservationToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
             this.makeReservationToolStripMenuItem.Text = "Make Reservation";
             this.makeReservationToolStripMenuItem.Click += new System.EventHandler(this.makeReservationToolStripMenuItem_Click);
             // 
