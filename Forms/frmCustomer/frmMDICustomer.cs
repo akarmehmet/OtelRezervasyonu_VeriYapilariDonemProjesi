@@ -68,7 +68,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         {
             if (this.MdiChildren.Count() == 0)
             {
-                frmCustomer.frmListbyCityDistrict frmListbyCityDistrict= new frmListbyCityDistrict();
+                frmCustomer.frmListbyCityDistrict frmListbyCityDistrict = new frmListbyCityDistrict();
                 frmListbyCityDistrict.MdiParent = this;
                 frmListbyCityDistrict.Show();
             }
@@ -165,6 +165,36 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
                 frmHotelScoreSelectedCityDistrict frmHotelScoreSelectedCityDistrict = new frmHotelScoreSelectedCityDistrict();
                 frmHotelScoreSelectedCityDistrict.MdiParent = this;
                 frmHotelScoreSelectedCityDistrict.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
+        private void getReservationCustomersOrderByNameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Count() == 0)
+            {
+                frmRezNameSurnameAZ frmRezNameSurnameAZ = new frmRezNameSurnameAZ();
+                frmRezNameSurnameAZ.MdiParent = this;
+                frmRezNameSurnameAZ.Show();
+            }
+            else
+            {
+                MessageBox.Show("YOU CAN ONLY OPEN 1 PAGE AT THE SAME TIME");
+            }
+        }
+
+        private void showHotelsInoderPreorderPostorderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+            if (this.MdiChildren.Count() == 0)
+            {
+                BinarySearchTreeofHotels BinarySearchTreeofHotels = new BinarySearchTreeofHotels();
+                BinarySearchTreeofHotels.MdiParent = this;
+                BinarySearchTreeofHotels.Show();
             }
             else
             {

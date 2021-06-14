@@ -33,7 +33,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.rezervationsLbl = new System.Windows.Forms.Label();
             this.AZNameSurnameLbl = new System.Windows.Forms.Label();
             this.btnFindReservation = new System.Windows.Forms.Button();
-            this.listViewPersonel = new System.Windows.Forms.ListView();
+            this.txtCustomers = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // txtReservationNo
@@ -78,14 +78,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.btnFindReservation.UseVisualStyleBackColor = false;
             this.btnFindReservation.Click += new System.EventHandler(this.btnFindReservation_Click);
             // 
-            // listViewPersonel
+            // txtCustomers
             // 
-            this.listViewPersonel.HideSelection = false;
-            this.listViewPersonel.Location = new System.Drawing.Point(47, 209);
-            this.listViewPersonel.Name = "listViewPersonel";
-            this.listViewPersonel.Size = new System.Drawing.Size(763, 404);
-            this.listViewPersonel.TabIndex = 112;
-            this.listViewPersonel.UseCompatibleStateImageBehavior = false;
+            this.txtCustomers.Location = new System.Drawing.Point(25, 270);
+            this.txtCustomers.Name = "txtCustomers";
+            this.txtCustomers.Size = new System.Drawing.Size(785, 359);
+            this.txtCustomers.TabIndex = 113;
+            this.txtCustomers.Text = "";
             // 
             // frmRezNameSurnameAZ
             // 
@@ -93,7 +92,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(839, 641);
-            this.Controls.Add(this.listViewPersonel);
+            this.Controls.Add(this.txtCustomers);
             this.Controls.Add(this.btnFindReservation);
             this.Controls.Add(this.AZNameSurnameLbl);
             this.Controls.Add(this.txtReservationNo);
@@ -113,6 +112,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.Label rezervationsLbl;
         private System.Windows.Forms.Label AZNameSurnameLbl;
         private System.Windows.Forms.Button btnFindReservation;
-        private System.Windows.Forms.ListView listViewPersonel;
+        private System.Windows.Forms.RichTextBox txtCustomers;
     }
 }

@@ -11,6 +11,22 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
 {
     public class ReservationHashTable : HashLinearTable<Reservation>
     {
-       
+        public override void AddNode(HashLinearNode<Reservation> node)
+        {
+            int hash = (node.Key % TABLE_SIZE);
+
+
+            ReservationHashNode reservationHashNode = (ReservationHashNode)node;
+
+
+            while (table[hash] != null && table[hash].Key != node.Key)
+            {
+                hash = (hash + 1) % TABLE_SIZE;
+            }
+
+            table[hash] = node;
+
+            table[hash] = reservationHashNode;
+        }
     }
 }

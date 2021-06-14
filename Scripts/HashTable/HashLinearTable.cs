@@ -9,8 +9,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable
     public abstract class HashLinearTable<T>
     {
 
-        int TABLE_SIZE = 100;
-        HashLinearNode<T>[] table;
+       protected int TABLE_SIZE = 100;
+       protected HashLinearNode<T>[] table;
 
         public HashLinearTable()
         {
@@ -21,7 +21,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable
             }
         }
 
-        public void AddNode(HashLinearNode<T> node)
+        public virtual void AddNode(HashLinearNode<T> node)
         {
 
             int hash = (node.Key % TABLE_SIZE);
@@ -32,8 +32,11 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable
                 hash = (hash + 1) % TABLE_SIZE;
             }
 
-            table[hash] = new HashLinearNode<T>(node.Key, node.Value);
+            table[hash] = node;
+
         }
+
+       
 
         public HashLinearNode<T> GetNode(int key)
         {
@@ -49,7 +52,9 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable
 
             }
 
-            if (table[hash].Key == key)
+            if (table[hash] == null)
+                return default;
+           else if (table[hash].Key == key)
                 return table[hash];
             else
                 return default;

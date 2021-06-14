@@ -26,6 +26,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             InitializeComponent();
             customerHotelCrudOperations = new CustomerHotelCrupOperations();
             hotelReservation = new HotelReservation();
+            lblReservationNumber.Text = hotelReservation.ReservationNo.ToString();
         }
 
 
@@ -133,7 +134,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
                 txtPhone.Text == "" ||
                 txtTcNo.Text == "" ||
                 txtNumberOfDays.Text == "" ||
-                txtReservationNo.Text == "" ||
+                //txtReservationNo.Text == "" ||
                 comboBoxRoomNo.SelectedItem == null)
                 return false;
             else

@@ -32,7 +32,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.rezervationLbl = new System.Windows.Forms.Label();
             this.findPersonel = new System.Windows.Forms.Button();
             this.lblHotelName = new System.Windows.Forms.Label();
-            this.txtHotelName = new System.Windows.Forms.TextBox();
             this.panelCustomerInfo = new System.Windows.Forms.Panel();
             this.lblEnteredNumberOfPerson = new System.Windows.Forms.Label();
             this.lblNumberOfPerson = new System.Windows.Forms.Label();
@@ -48,7 +47,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.nameLbl = new System.Windows.Forms.Label();
             this.phoneLbl = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.txtReservationNo = new System.Windows.Forms.TextBox();
             this.rezervationsLbl = new System.Windows.Forms.Label();
             this.roomLbl = new System.Windows.Forms.Label();
             this.txtNumberOfPerson = new System.Windows.Forms.TextBox();
@@ -59,6 +57,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.comboBoxRoomNo = new System.Windows.Forms.ComboBox();
             this.btnMakeReservation = new System.Windows.Forms.Button();
             this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.txtHotelName = new System.Windows.Forms.TextBox();
+            this.lblReservationNumber = new System.Windows.Forms.Label();
             this.panelCustomerInfo.SuspendLayout();
             this.panelReservationInfo.SuspendLayout();
             this.SuspendLayout();
@@ -96,14 +96,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.lblHotelName.Size = new System.Drawing.Size(118, 22);
             this.lblHotelName.TabIndex = 86;
             this.lblHotelName.Text = "Hotel Name";
-            // 
-            // txtHotelName
-            // 
-            this.txtHotelName.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtHotelName.Location = new System.Drawing.Point(187, 88);
-            this.txtHotelName.Name = "txtHotelName";
-            this.txtHotelName.Size = new System.Drawing.Size(186, 31);
-            this.txtHotelName.TabIndex = 85;
             // 
             // panelCustomerInfo
             // 
@@ -259,14 +251,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.txtName.Size = new System.Drawing.Size(186, 31);
             this.txtName.TabIndex = 98;
             // 
-            // txtReservationNo
-            // 
-            this.txtReservationNo.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtReservationNo.Location = new System.Drawing.Point(161, 47);
-            this.txtReservationNo.Name = "txtReservationNo";
-            this.txtReservationNo.Size = new System.Drawing.Size(186, 31);
-            this.txtReservationNo.TabIndex = 106;
-            // 
             // rezervationsLbl
             // 
             this.rezervationsLbl.AutoSize = true;
@@ -327,13 +311,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             // 
             // panelReservationInfo
             // 
-            this.panelReservationInfo.Controls.Add(this.txtReservationNo);
             this.panelReservationInfo.Controls.Add(this.roomLbl);
             this.panelReservationInfo.Controls.Add(this.comboBoxRoomNo);
             this.panelReservationInfo.Controls.Add(this.numberofDaysLbl);
             this.panelReservationInfo.Controls.Add(this.txtNumberOfDays);
             this.panelReservationInfo.Controls.Add(this.txtNumberOfPerson);
             this.panelReservationInfo.Controls.Add(this.NumberofPersonsLbl);
+            this.panelReservationInfo.Controls.Add(this.lblReservationNumber);
             this.panelReservationInfo.Controls.Add(this.rezervationsLbl);
             this.panelReservationInfo.Location = new System.Drawing.Point(11, 140);
             this.panelReservationInfo.Name = "panelReservationInfo";
@@ -373,6 +357,23 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.lblTotalPrice.Size = new System.Drawing.Size(0, 22);
             this.lblTotalPrice.TabIndex = 116;
             // 
+            // txtHotelName
+            // 
+            this.txtHotelName.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtHotelName.Location = new System.Drawing.Point(187, 88);
+            this.txtHotelName.Name = "txtHotelName";
+            this.txtHotelName.Size = new System.Drawing.Size(186, 31);
+            this.txtHotelName.TabIndex = 85;
+            // 
+            // lblReservationNumber
+            // 
+            this.lblReservationNumber.AutoSize = true;
+            this.lblReservationNumber.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.lblReservationNumber.Location = new System.Drawing.Point(181, 35);
+            this.lblReservationNumber.Name = "lblReservationNumber";
+            this.lblReservationNumber.Size = new System.Drawing.Size(0, 22);
+            this.lblReservationNumber.TabIndex = 107;
+            // 
             // frmMakeReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,7 +407,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.Label rezervationLbl;
         private System.Windows.Forms.Button findPersonel;
         private System.Windows.Forms.Label lblHotelName;
-        private System.Windows.Forms.TextBox txtHotelName;
         private System.Windows.Forms.Panel panelCustomerInfo;
         private System.Windows.Forms.Button addPersonBtn;
         private System.Windows.Forms.Label mailLbl;
@@ -422,7 +422,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.Label NumberofPersonsLbl;
         private System.Windows.Forms.Label phoneLbl;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtReservationNo;
         private System.Windows.Forms.Label rezervationsLbl;
         private System.Windows.Forms.Label roomLbl;
         private System.Windows.Forms.RichTextBox txtAdress;
@@ -433,5 +432,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.Button btnMakeReservation;
         private System.Windows.Forms.ComboBox comboBoxRoomNo;
         private System.Windows.Forms.Label lblTotalPrice;
+        private System.Windows.Forms.Label lblReservationNumber;
+        private System.Windows.Forms.TextBox txtHotelName;
     }
 }
