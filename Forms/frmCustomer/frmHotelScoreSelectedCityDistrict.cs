@@ -21,7 +21,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         public frmHotelScoreSelectedCityDistrict()
         {
             InitializeComponent();
-            customerHotelCrudOperations = new CustomerHotelCrupOperations();
+            customerHotelCrudOperations = new CustomerHotelCrudOperations();
         }
 
         private void btnListHotel_Click(object sender, EventArgs e)

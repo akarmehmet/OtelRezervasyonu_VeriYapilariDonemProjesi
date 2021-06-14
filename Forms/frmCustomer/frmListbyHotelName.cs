@@ -21,7 +21,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         {
             InitializeComponent();
 
-            customerHotelCrudOperations = new CustomerHotelCrupOperations();
+            customerHotelCrudOperations = new CustomerHotelCrudOperations();
             GetAllHotelOrderByName();
         }
 

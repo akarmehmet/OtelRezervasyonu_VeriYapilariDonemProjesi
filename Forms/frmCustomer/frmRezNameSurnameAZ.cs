@@ -15,7 +15,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         public frmRezNameSurnameAZ()
         {
             InitializeComponent();
-            customerHotelCrudOperations = new CustomerHotelCrupOperations();
+            customerHotelCrudOperations = new CustomerHotelCrudOperations();
         }
 
         private void btnFindReservation_Click(object sender, EventArgs e)

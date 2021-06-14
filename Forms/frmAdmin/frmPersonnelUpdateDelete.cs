@@ -19,7 +19,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         {
             InitializeComponent();
 
-            adminPersonelOperations = new AdminHotelPersonelCrupOperations();
+            adminPersonelOperations = new AdminHotelPersonelCrudOperations();
             adminHotelCrudOperations = new AdminHotelCrudOperations();
             panelPersonel.Visible = false;
         }

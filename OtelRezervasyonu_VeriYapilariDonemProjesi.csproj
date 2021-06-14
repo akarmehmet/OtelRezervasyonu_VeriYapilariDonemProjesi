@@ -168,8 +168,8 @@
     <Compile Include="Scripts\ConcreteClass\Hotel.cs" />
     <Compile Include="Scripts\ConcreteClass\HotelRoom.cs" />
     <Compile Include="DATASTRUCTURES\BST\HotelTrees.cs" />
-    <Compile Include="Scripts\DatabaseOperations\AdminHotelPersonelCrupOperations.cs" />
-    <Compile Include="Scripts\DatabaseOperations\CustomerHotelCrupOperations.cs" />
+    <Compile Include="Scripts\DatabaseOperations\AdminHotelPersonelCrudOperations.cs" />
+    <Compile Include="Scripts\DatabaseOperations\CustomerHotelCrudOperations.cs" />
     <Compile Include="Scripts\Enums\Enum.cs" />
     <Compile Include="Scripts\FactoryClasses\PersonelFactory.cs" />
     <Compile Include="DATASTRUCTURES\HashTable\HashLinearNode.cs" />

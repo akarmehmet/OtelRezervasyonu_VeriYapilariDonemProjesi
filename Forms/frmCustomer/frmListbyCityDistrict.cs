@@ -20,7 +20,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         public frmListbyCityDistrict()
         {
             InitializeComponent();
-            customerHotelCrudOperations = new CustomerHotelCrupOperations();
+            customerHotelCrudOperations = new CustomerHotelCrudOperations();
             //GetAllHotelOrderByName();
         }
 

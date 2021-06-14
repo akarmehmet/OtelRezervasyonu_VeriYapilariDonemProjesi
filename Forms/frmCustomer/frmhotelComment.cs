@@ -23,7 +23,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         {
             InitializeComponent();
 
-            customerDbOperations = new CustomerHotelCrupOperations();
+            customerDbOperations = new CustomerHotelCrudOperations();
             adminDbOperations = new AdminHotelCrudOperations();
             FillComboBox();
         }

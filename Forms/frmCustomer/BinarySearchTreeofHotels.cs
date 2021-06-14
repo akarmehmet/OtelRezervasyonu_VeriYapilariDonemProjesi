@@ -28,7 +28,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         public BinarySearchTreeofHotels()
         {
             InitializeComponent();
-            customerHotelCrudOperations = new CustomerHotelCrupOperations();
+            customerHotelCrudOperations = new CustomerHotelCrudOperations();
         }
 
         private void btnInorder_Click(object sender, EventArgs e)

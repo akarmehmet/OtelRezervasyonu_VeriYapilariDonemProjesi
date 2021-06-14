@@ -8,11 +8,11 @@ using System.Linq;
 
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations
 {
-    public class AdminHotelPersonelCrupOperations : IDbAdminPersonelCrudOperations
+    public class AdminHotelPersonelCrudOperations : IDbAdminPersonelCrudOperations
     {
 
         private HotelData hotelData;
-        public AdminHotelPersonelCrupOperations()
+        public AdminHotelPersonelCrudOperations()
         {
             hotelData = HotelData.Instance;
         }

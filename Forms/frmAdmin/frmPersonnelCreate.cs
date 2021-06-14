@@ -25,7 +25,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private void InitializeClassFields()
         {
 
-            adminHotelPersonelCrupOperations = new AdminHotelPersonelCrupOperations();
+            adminHotelPersonelCrupOperations = new AdminHotelPersonelCrudOperations();
         }
 
 

@@ -9,10 +9,10 @@ using System.Collections.Generic;
 
 namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations
 {
-    public class CustomerHotelCrupOperations : IDbCustomerAccomodationPlaceCrudOperations
+    public class CustomerHotelCrudOperations : IDbCustomerAccomodationPlaceCrudOperations
     {
         private HotelData hotelData;
-        public CustomerHotelCrupOperations()
+        public CustomerHotelCrudOperations()
         {
 
             hotelData = HotelData.Instance;
@@ -71,15 +71,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.DatabaseOperations
         {
             hotelData.ReservationHashTable.AddNode(new ReservationHashNode(reservation.ReservationNo, reservation,reservation.Customers.Count));
 
-            //HeapTrees<Customer, string> reservationTress = new HeapTrees<Customer, string>(reservation.Customers.Count);
-
-            //foreach (var customer in reservation.Customers)
-            //{
-            //    HeapNode<Customer, string> heapNode = new HeapNode<Customer, string>(customer,customer.Name);
-            //    reservationTress.Insert(heapNode);
-            //}
-
-            //hotelData.ReservationCustomersHeap.Add(reservationTress);
             
         }
 

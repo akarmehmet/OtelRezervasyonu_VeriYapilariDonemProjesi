@@ -24,7 +24,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         public frmMakeReservation()
         {
             InitializeComponent();
-            customerHotelCrudOperations = new CustomerHotelCrupOperations();
+            customerHotelCrudOperations = new CustomerHotelCrudOperations();
             hotelReservation = new HotelReservation();
             lblReservationNumber.Text = hotelReservation.ReservationNo.ToString();
         }
