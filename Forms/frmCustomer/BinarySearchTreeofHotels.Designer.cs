@@ -33,12 +33,12 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.btnInorder = new System.Windows.Forms.Button();
             this.btnPostorder = new System.Windows.Forms.Button();
             this.btnPreorder = new System.Windows.Forms.Button();
-            this.listViewBinarySearch = new System.Windows.Forms.ListView();
+            this.listViewHotel = new System.Windows.Forms.ListView();
             this.TreeDepthLbl = new System.Windows.Forms.Label();
-            this.txtReservationNo = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTreeDepth = new System.Windows.Forms.TextBox();
+            this.btnTreeDepth = new System.Windows.Forms.Button();
+            this.btnNumberOFElements = new System.Windows.Forms.Button();
+            this.txtNumberOfElements = new System.Windows.Forms.TextBox();
             this.numberofElementsLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -64,6 +64,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.btnInorder.TabIndex = 112;
             this.btnInorder.Text = "Inorder";
             this.btnInorder.UseVisualStyleBackColor = false;
+            this.btnInorder.Click += new System.EventHandler(this.btnInorder_Click);
             // 
             // btnPostorder
             // 
@@ -76,6 +77,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.btnPostorder.TabIndex = 113;
             this.btnPostorder.Text = "Postorder";
             this.btnPostorder.UseVisualStyleBackColor = false;
+            this.btnPostorder.Click += new System.EventHandler(this.btnPostorder_Click);
             // 
             // btnPreorder
             // 
@@ -88,15 +90,16 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.btnPreorder.TabIndex = 114;
             this.btnPreorder.Text = "Preorder";
             this.btnPreorder.UseVisualStyleBackColor = false;
+            this.btnPreorder.Click += new System.EventHandler(this.btnPreorder_Click);
             // 
-            // listViewBinarySearch
+            // listViewHotel
             // 
-            this.listViewBinarySearch.HideSelection = false;
-            this.listViewBinarySearch.Location = new System.Drawing.Point(40, 171);
-            this.listViewBinarySearch.Name = "listViewBinarySearch";
-            this.listViewBinarySearch.Size = new System.Drawing.Size(763, 222);
-            this.listViewBinarySearch.TabIndex = 115;
-            this.listViewBinarySearch.UseCompatibleStateImageBehavior = false;
+            this.listViewHotel.HideSelection = false;
+            this.listViewHotel.Location = new System.Drawing.Point(40, 171);
+            this.listViewHotel.Name = "listViewHotel";
+            this.listViewHotel.Size = new System.Drawing.Size(763, 222);
+            this.listViewHotel.TabIndex = 115;
+            this.listViewHotel.UseCompatibleStateImageBehavior = false;
             // 
             // TreeDepthLbl
             // 
@@ -108,45 +111,47 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.TreeDepthLbl.TabIndex = 116;
             this.TreeDepthLbl.Text = "Tree Depth:";
             // 
-            // txtReservationNo
+            // txtTreeDepth
             // 
-            this.txtReservationNo.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtReservationNo.Location = new System.Drawing.Point(152, 494);
-            this.txtReservationNo.Name = "txtReservationNo";
-            this.txtReservationNo.Size = new System.Drawing.Size(186, 31);
-            this.txtReservationNo.TabIndex = 117;
+            this.txtTreeDepth.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtTreeDepth.Location = new System.Drawing.Point(152, 494);
+            this.txtTreeDepth.Name = "txtTreeDepth";
+            this.txtTreeDepth.Size = new System.Drawing.Size(186, 31);
+            this.txtTreeDepth.TabIndex = 117;
             // 
-            // button1
+            // btnTreeDepth
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(125, 547);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(232, 44);
-            this.button1.TabIndex = 118;
-            this.button1.Text = "Preorder";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnTreeDepth.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnTreeDepth.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnTreeDepth.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTreeDepth.Location = new System.Drawing.Point(125, 547);
+            this.btnTreeDepth.Name = "btnTreeDepth";
+            this.btnTreeDepth.Size = new System.Drawing.Size(232, 44);
+            this.btnTreeDepth.TabIndex = 118;
+            this.btnTreeDepth.Text = "Get Tree Depth";
+            this.btnTreeDepth.UseVisualStyleBackColor = false;
+            this.btnTreeDepth.Click += new System.EventHandler(this.btnTreeDepth_Click);
             // 
-            // button2
+            // btnNumberOFElements
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(447, 547);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(232, 44);
-            this.button2.TabIndex = 121;
-            this.button2.Text = "Preorder";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnNumberOFElements.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnNumberOFElements.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnNumberOFElements.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnNumberOFElements.Location = new System.Drawing.Point(447, 547);
+            this.btnNumberOFElements.Name = "btnNumberOFElements";
+            this.btnNumberOFElements.Size = new System.Drawing.Size(232, 44);
+            this.btnNumberOFElements.TabIndex = 121;
+            this.btnNumberOFElements.Text = "Get Element Count";
+            this.btnNumberOFElements.UseVisualStyleBackColor = false;
+            this.btnNumberOFElements.Click += new System.EventHandler(this.btnNumberOFElements_Click);
             // 
-            // textBox1
+            // txtNumberOfElements
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.textBox1.Location = new System.Drawing.Point(471, 494);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 31);
-            this.textBox1.TabIndex = 120;
+            this.txtNumberOfElements.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtNumberOfElements.Location = new System.Drawing.Point(471, 494);
+            this.txtNumberOfElements.Name = "txtNumberOfElements";
+            this.txtNumberOfElements.Size = new System.Drawing.Size(186, 31);
+            this.txtNumberOfElements.TabIndex = 120;
             // 
             // numberofElementsLbl
             // 
@@ -164,13 +169,13 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(839, 641);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnNumberOFElements);
+            this.Controls.Add(this.txtNumberOfElements);
             this.Controls.Add(this.numberofElementsLbl);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtReservationNo);
+            this.Controls.Add(this.btnTreeDepth);
+            this.Controls.Add(this.txtTreeDepth);
             this.Controls.Add(this.TreeDepthLbl);
-            this.Controls.Add(this.listViewBinarySearch);
+            this.Controls.Add(this.listViewHotel);
             this.Controls.Add(this.btnPreorder);
             this.Controls.Add(this.btnPostorder);
             this.Controls.Add(this.btnInorder);
@@ -190,12 +195,12 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.Button btnInorder;
         private System.Windows.Forms.Button btnPostorder;
         private System.Windows.Forms.Button btnPreorder;
-        private System.Windows.Forms.ListView listViewBinarySearch;
+        private System.Windows.Forms.ListView listViewHotel;
         private System.Windows.Forms.Label TreeDepthLbl;
-        private System.Windows.Forms.TextBox txtReservationNo;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTreeDepth;
+        private System.Windows.Forms.Button btnTreeDepth;
+        private System.Windows.Forms.Button btnNumberOFElements;
+        private System.Windows.Forms.TextBox txtNumberOfElements;
         private System.Windows.Forms.Label numberofElementsLbl;
     }
 }
