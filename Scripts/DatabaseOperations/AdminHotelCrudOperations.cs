@@ -25,6 +25,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass
 
         public AccommodationPlace FindAccommodationPlace(string name)
         {
+
+            
             try
             {
                 return hotelData.HotelsData.Search(name).Data;

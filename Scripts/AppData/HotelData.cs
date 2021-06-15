@@ -2,7 +2,6 @@
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.BST;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.ConcreteClass;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.HashTable;
-using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Heap;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Models;
 using OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Singleton;
 using System.Collections.Generic;

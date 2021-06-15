@@ -202,6 +202,11 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             }
         }
 
+        private void hotelOperationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void adminTopMDIPanel_MouseDown(object sender, MouseEventArgs e)
         {
             take = true;

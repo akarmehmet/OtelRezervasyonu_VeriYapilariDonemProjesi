@@ -40,13 +40,12 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scoreInSelectedCityDistrictToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hotelInfoUpdateDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addRoomToHotelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.makeReservationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.getReservationCustomersOrderByNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showHotelsInoderPreorderPostorderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hotelLogo = new System.Windows.Forms.PictureBox();
             this.adminTopMDIPanel = new System.Windows.Forms.Panel();
             this.exit = new System.Windows.Forms.PictureBox();
-            this.getReservationCustomersOrderByNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showHotelsInoderPreorderPostorderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.makeReservationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminLeftMDIPanel.SuspendLayout();
             this.toolStripContainer1.LeftToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -71,7 +70,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(0, 122);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(20, 122);
             // 
             // toolStripContainer1.LeftToolStripPanel
             // 
@@ -104,7 +103,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.hotelOperationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newHotelCreateToolStripMenuItem,
             this.hotelInfoUpdateDeleteToolStripMenuItem,
-            this.addRoomToHotelToolStripMenuItem,
             this.makeReservationToolStripMenuItem,
             this.getReservationCustomersOrderByNameToolStripMenuItem,
             this.showHotelsInoderPreorderPostorderToolStripMenuItem});
@@ -116,6 +114,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.hotelOperationsToolStripMenuItem.Name = "hotelOperationsToolStripMenuItem";
             this.hotelOperationsToolStripMenuItem.Size = new System.Drawing.Size(259, 68);
             this.hotelOperationsToolStripMenuItem.Text = "    Hotel Operations";
+            this.hotelOperationsToolStripMenuItem.Click += new System.EventHandler(this.hotelOperationsToolStripMenuItem_Click);
             // 
             // newHotelCreateToolStripMenuItem
             // 
@@ -163,18 +162,19 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.hotelInfoUpdateDeleteToolStripMenuItem.Text = "Hotel Comment";
             this.hotelInfoUpdateDeleteToolStripMenuItem.Click += new System.EventHandler(this.hotelInfoUpdateDeleteToolStripMenuItem_Click);
             // 
-            // addRoomToHotelToolStripMenuItem
+            // getReservationCustomersOrderByNameToolStripMenuItem
             // 
-            this.addRoomToHotelToolStripMenuItem.Name = "addRoomToHotelToolStripMenuItem";
-            this.addRoomToHotelToolStripMenuItem.Size = new System.Drawing.Size(477, 26);
-            this.addRoomToHotelToolStripMenuItem.Text = "Add Room to Hotel";
+            this.getReservationCustomersOrderByNameToolStripMenuItem.Name = "getReservationCustomersOrderByNameToolStripMenuItem";
+            this.getReservationCustomersOrderByNameToolStripMenuItem.Size = new System.Drawing.Size(477, 26);
+            this.getReservationCustomersOrderByNameToolStripMenuItem.Text = "Get Reservation Customers Order By Name";
+            this.getReservationCustomersOrderByNameToolStripMenuItem.Click += new System.EventHandler(this.getReservationCustomersOrderByNameToolStripMenuItem_Click);
             // 
-            // makeReservationToolStripMenuItem
+            // showHotelsInoderPreorderPostorderToolStripMenuItem
             // 
-            this.makeReservationToolStripMenuItem.Name = "makeReservationToolStripMenuItem";
-            this.makeReservationToolStripMenuItem.Size = new System.Drawing.Size(477, 26);
-            this.makeReservationToolStripMenuItem.Text = "Make Reservation";
-            this.makeReservationToolStripMenuItem.Click += new System.EventHandler(this.makeReservationToolStripMenuItem_Click);
+            this.showHotelsInoderPreorderPostorderToolStripMenuItem.Name = "showHotelsInoderPreorderPostorderToolStripMenuItem";
+            this.showHotelsInoderPreorderPostorderToolStripMenuItem.Size = new System.Drawing.Size(477, 26);
+            this.showHotelsInoderPreorderPostorderToolStripMenuItem.Text = "Show Hotels Inoder - Preorder-Postorder";
+            this.showHotelsInoderPreorderPostorderToolStripMenuItem.Click += new System.EventHandler(this.showHotelsInoderPreorderPostorderToolStripMenuItem_Click);
             // 
             // hotelLogo
             // 
@@ -209,19 +209,12 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             this.exit.TabStop = false;
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
-            // getReservationCustomersOrderByNameToolStripMenuItem
+            // makeReservationToolStripMenuItem
             // 
-            this.getReservationCustomersOrderByNameToolStripMenuItem.Name = "getReservationCustomersOrderByNameToolStripMenuItem";
-            this.getReservationCustomersOrderByNameToolStripMenuItem.Size = new System.Drawing.Size(477, 26);
-            this.getReservationCustomersOrderByNameToolStripMenuItem.Text = "Get Reservation Customers Order By Name";
-            this.getReservationCustomersOrderByNameToolStripMenuItem.Click += new System.EventHandler(this.getReservationCustomersOrderByNameToolStripMenuItem_Click);
-            // 
-            // showHotelsInoderPreorderPostorderToolStripMenuItem
-            // 
-            this.showHotelsInoderPreorderPostorderToolStripMenuItem.Name = "showHotelsInoderPreorderPostorderToolStripMenuItem";
-            this.showHotelsInoderPreorderPostorderToolStripMenuItem.Size = new System.Drawing.Size(477, 26);
-            this.showHotelsInoderPreorderPostorderToolStripMenuItem.Text = "Show Hotels Inoder - Preorder-Postorder";
-            this.showHotelsInoderPreorderPostorderToolStripMenuItem.Click += new System.EventHandler(this.showHotelsInoderPreorderPostorderToolStripMenuItem_Click);
+            this.makeReservationToolStripMenuItem.Name = "makeReservationToolStripMenuItem";
+            this.makeReservationToolStripMenuItem.Size = new System.Drawing.Size(477, 26);
+            this.makeReservationToolStripMenuItem.Text = "Make Reservation";
+            this.makeReservationToolStripMenuItem.Click += new System.EventHandler(this.makeReservationToolStripMenuItem_Click);
             // 
             // frmMDICustomer
             // 
@@ -257,7 +250,6 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.ToolStripMenuItem hotelOperationsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newHotelCreateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hotelInfoUpdateDeleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addRoomToHotelToolStripMenuItem;
         private System.Windows.Forms.PictureBox hotelLogo;
         private System.Windows.Forms.Panel adminTopMDIPanel;
         private System.Windows.Forms.PictureBox exit;
@@ -265,8 +257,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         private System.Windows.Forms.ToolStripMenuItem cityDistrictToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem numberOfStarsOfTheHotelsInTheProvinceDistrictToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scoreInSelectedCityDistrictToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem makeReservationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getReservationCustomersOrderByNameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showHotelsInoderPreorderPostorderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem makeReservationToolStripMenuItem;
     }
 }
