@@ -127,6 +127,10 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
                 return;
             }
 
+            if (selectedPersonel.Tag == null)
+                return;
+
+
             Personel updatedPersonel = (Personel)selectedPersonel.Tag;
 
             updatedPersonel.Address.OpenAdress = txtAdress.Text;

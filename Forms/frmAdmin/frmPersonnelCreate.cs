@@ -20,6 +20,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
         public frmPersonnelCreate()
         {
             InitializeComponent();
+            InitializeClassFields();
         }
 
         private void InitializeClassFields()
@@ -33,7 +34,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 
         private void addPersonelBtn_Click(object sender, EventArgs e)
         {
-
+            AddPersonelToHotel();
         }
 
 
@@ -113,14 +114,14 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
 
         private void txtHotelName_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
+            //if (char.IsLetter(e.KeyChar) || e.KeyChar == 8)
+            //{
+            //    e.Handled = false;
+            //}
+            //else
+            //{
+            //    e.Handled = true;
+            //}
         }
 
         private void txtTcNo_KeyPress(object sender, KeyPressEventArgs e)
