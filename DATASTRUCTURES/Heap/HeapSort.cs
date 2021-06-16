@@ -28,5 +28,28 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Heap
             return sorted;
         }
 
+
+        public string GetSortedKeys()
+        {
+          HeapNode<T,K>[] sortedArray =  Sort();
+
+            string keys = "";
+
+            int counter = 0;
+
+            string[] names = new string[sortedArray.Length];
+
+            foreach (var customer in sortedArray)
+            {
+                if (customer != null)
+                {
+                    counter++;
+                    keys += $"{counter}. Customer Name : {customer.Key}\n";
+                }
+            }
+
+            return keys;
+        }
+
     }
 }

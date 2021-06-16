@@ -26,6 +26,8 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Heap
             
         }
 
-       
+      
+
+
     }
 }

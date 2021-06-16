@@ -51,7 +51,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmCustomer
             //listViewPersonel.Items.Add(customerItem);
 
 
-          txtCustomers.Text =  reservationNode.ReservationHeapTrees.GetCustomersName();
+          txtCustomers.Text =  reservationNode.ReservationHeapTrees.GetKeys();
 
         }
     }

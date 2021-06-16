@@ -74,22 +74,10 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Scripts.Heap
             heapArray[index] = top;
         }
 
-        public string GetCustomersName()
+        public string GetKeys()
         {
-            string customers = "";
-
-            int counter = 0;
-
-            foreach (var customer in heapArray)
-            {
-                if (customer != null)
-                {
-                    counter++;
-                    customers += $"{counter}. Customer Name : {customer.Key}\n";
-                }
-            }
-
-            return customers;
+            HeapSort<T, K> heapSort = new HeapSort<T, K>(heapArray);
+            return heapSort.GetSortedKeys();
         }
         public void DisplayHeap()
         {
