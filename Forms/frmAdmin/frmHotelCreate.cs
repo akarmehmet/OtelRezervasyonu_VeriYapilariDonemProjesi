@@ -44,6 +44,7 @@ namespace OtelRezervasyonu_VeriYapilariDonemProjesi.Forms.frmAdmin
         private void createHotelBtn_Click(object sender, EventArgs e)
         {
             AddHotel();
+            MessageBox.Show("Add the New Hotel !");
         }
 
         private void hotelNameTxtBx_KeyPress(object sender, KeyPressEventArgs e)
